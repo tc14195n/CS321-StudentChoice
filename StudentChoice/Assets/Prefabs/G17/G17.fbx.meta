@@ -1,0 +1,4482 @@
+fileFormatVersion: 2
+guid: cecbe328eb43ec64b8110f3b0f0238a6
+labels:
+- Gun
+- Weapon
+- Prop
+timeCreated: 1456506248
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: ads_ctrl
+    100002: arm_ik.L
+    100004: arm_ik.R
+    100006: arms
+    100008: arms_full
+    100010: base
+    100012: bullet_9mm
+    100014: bullet_9mm_empty
+    100016: elbow_twist.L
+    100018: elbow_twist.L_end
+    100020: elbow_twist.R
+    100022: elbow_twist.R_end
+    100024: finger_index_base.L
+    100026: finger_index_base.R
+    100028: finger_index_mid.L
+    100030: finger_index_mid.R
+    100032: finger_index_tip.L
+    100034: finger_index_tip.L_end
+    100036: finger_index_tip.R
+    100038: finger_index_tip.R_end
+    100040: finger_middle_base.L
+    100042: finger_middle_base.R
+    100044: finger_middle_mid.L
+    100046: finger_middle_mid.R
+    100048: finger_middle_tip.L
+    100050: finger_middle_tip.L_end
+    100052: finger_middle_tip.R
+    100054: finger_middle_tip.R_end
+    100056: finger_pinky_base.L
+    100058: finger_pinky_base.R
+    100060: finger_pinky_mid.L
+    100062: finger_pinky_mid.R
+    100064: finger_pinky_tip.L
+    100066: finger_pinky_tip.L_end
+    100068: finger_pinky_tip.R
+    100070: finger_pinky_tip.R_end
+    100072: finger_ring_base.L
+    100074: finger_ring_base.R
+    100076: finger_ring_mid.L
+    100078: finger_ring_mid.R
+    100080: finger_ring_tip.L
+    100082: finger_ring_tip.L_end
+    100084: finger_ring_tip.R
+    100086: finger_ring_tip.R_end
+    100088: finger_thumb_base.L
+    100090: finger_thumb_base.R
+    100092: finger_thumb_mid.L
+    100094: finger_thumb_mid.R
+    100096: finger_thumb_tip.L
+    100098: finger_thumb_tip.L_end
+    100100: finger_thumb_tip.R
+    100102: finger_thumb_tip.R_end
+    100104: forearm_main.L
+    100106: forearm_main.L_end
+    100108: forearm_main.R
+    100110: forearm_main.R_end
+    100112: forearm_twist_elbow.L
+    100114: forearm_twist_elbow.R
+    100116: forearm_twist_mid.L
+    100118: forearm_twist_mid.R
+    100120: forearm_twist_wrist.L
+    100122: forearm_twist_wrist.L_end
+    100124: forearm_twist_wrist.R
+    100126: forearm_twist_wrist.R_end
+    100128: //RootNode
+    100130: G17
+    100132: G17_mag
+    100134: hand_index_base.L
+    100136: hand_index_base.R
+    100138: hand_middle_base.L
+    100140: hand_middle_base.R
+    100142: hand_pinky_base.L
+    100144: hand_pinky_base.R
+    100146: hand_ring_base.L
+    100148: hand_ring_base.R
+    100150: mag
+    100152: mag_end
+    100154: main
+    100156: rig
+    100158: shape_wrist_twist_down.L
+    100160: shape_wrist_twist_down.L_end
+    100162: shape_wrist_twist_down.R
+    100164: shape_wrist_twist_down.R_end
+    100166: shape_wrist_twist_in.L
+    100168: shape_wrist_twist_in.L_end
+    100170: shape_wrist_twist_in.R
+    100172: shape_wrist_twist_in.R_end
+    100174: shape_wrist_twist_out.L
+    100176: shape_wrist_twist_out.L_end
+    100178: shape_wrist_twist_out.R
+    100180: shape_wrist_twist_out.R_end
+    100182: shape_wrist_twist_up.L
+    100184: shape_wrist_twist_up.L_end
+    100186: shape_wrist_twist_up.R
+    100188: shape_wrist_twist_up.R_end
+    100190: shoulder_ctrl.L
+    100192: shoulder_ctrl.R
+    100194: slide
+    100196: slide_end
+    100198: trigger
+    100200: trigger_end
+    100202: upperarm.L
+    100204: upperarm.R
+    400000: ads_ctrl
+    400002: arm_ik.L
+    400004: arm_ik.R
+    400006: arms
+    400008: arms_full
+    400010: base
+    400012: bullet_9mm
+    400014: bullet_9mm_empty
+    400016: elbow_twist.L
+    400018: elbow_twist.L_end
+    400020: elbow_twist.R
+    400022: elbow_twist.R_end
+    400024: finger_index_base.L
+    400026: finger_index_base.R
+    400028: finger_index_mid.L
+    400030: finger_index_mid.R
+    400032: finger_index_tip.L
+    400034: finger_index_tip.L_end
+    400036: finger_index_tip.R
+    400038: finger_index_tip.R_end
+    400040: finger_middle_base.L
+    400042: finger_middle_base.R
+    400044: finger_middle_mid.L
+    400046: finger_middle_mid.R
+    400048: finger_middle_tip.L
+    400050: finger_middle_tip.L_end
+    400052: finger_middle_tip.R
+    400054: finger_middle_tip.R_end
+    400056: finger_pinky_base.L
+    400058: finger_pinky_base.R
+    400060: finger_pinky_mid.L
+    400062: finger_pinky_mid.R
+    400064: finger_pinky_tip.L
+    400066: finger_pinky_tip.L_end
+    400068: finger_pinky_tip.R
+    400070: finger_pinky_tip.R_end
+    400072: finger_ring_base.L
+    400074: finger_ring_base.R
+    400076: finger_ring_mid.L
+    400078: finger_ring_mid.R
+    400080: finger_ring_tip.L
+    400082: finger_ring_tip.L_end
+    400084: finger_ring_tip.R
+    400086: finger_ring_tip.R_end
+    400088: finger_thumb_base.L
+    400090: finger_thumb_base.R
+    400092: finger_thumb_mid.L
+    400094: finger_thumb_mid.R
+    400096: finger_thumb_tip.L
+    400098: finger_thumb_tip.L_end
+    400100: finger_thumb_tip.R
+    400102: finger_thumb_tip.R_end
+    400104: forearm_main.L
+    400106: forearm_main.L_end
+    400108: forearm_main.R
+    400110: forearm_main.R_end
+    400112: forearm_twist_elbow.L
+    400114: forearm_twist_elbow.R
+    400116: forearm_twist_mid.L
+    400118: forearm_twist_mid.R
+    400120: forearm_twist_wrist.L
+    400122: forearm_twist_wrist.L_end
+    400124: forearm_twist_wrist.R
+    400126: forearm_twist_wrist.R_end
+    400128: //RootNode
+    400130: G17
+    400132: G17_mag
+    400134: hand_index_base.L
+    400136: hand_index_base.R
+    400138: hand_middle_base.L
+    400140: hand_middle_base.R
+    400142: hand_pinky_base.L
+    400144: hand_pinky_base.R
+    400146: hand_ring_base.L
+    400148: hand_ring_base.R
+    400150: mag
+    400152: mag_end
+    400154: main
+    400156: rig
+    400158: shape_wrist_twist_down.L
+    400160: shape_wrist_twist_down.L_end
+    400162: shape_wrist_twist_down.R
+    400164: shape_wrist_twist_down.R_end
+    400166: shape_wrist_twist_in.L
+    400168: shape_wrist_twist_in.L_end
+    400170: shape_wrist_twist_in.R
+    400172: shape_wrist_twist_in.R_end
+    400174: shape_wrist_twist_out.L
+    400176: shape_wrist_twist_out.L_end
+    400178: shape_wrist_twist_out.R
+    400180: shape_wrist_twist_out.R_end
+    400182: shape_wrist_twist_up.L
+    400184: shape_wrist_twist_up.L_end
+    400186: shape_wrist_twist_up.R
+    400188: shape_wrist_twist_up.R_end
+    400190: shoulder_ctrl.L
+    400192: shoulder_ctrl.R
+    400194: slide
+    400196: slide_end
+    400198: trigger
+    400200: trigger_end
+    400202: upperarm.L
+    400204: upperarm.R
+    4300000: bullet_9mm
+    4300002: bullet_9mm_empty
+    4300004: G17
+    4300006: G17_mag
+    4300008: arms
+    4300010: arms_full
+    7400000: rig|ADS_off
+    7400002: rig|ADS_on
+    7400004: rig|attack
+    7400006: rig|attack_fail
+    7400008: rig|draw
+    7400010: rig|draw_slide
+    7400012: rig|hide
+    7400014: rig|idle
+    7400016: rig|crawl
+    7400018: rig|idle_move1
+    7400020: rig|inspect
+    7400022: rig|ref_ads
+    7400024: rig|ref_empty
+    7400026: rig|ref_idle
+    7400028: rig|reload
+    7400030: rig|reload_tactical
+    7400032: rig|run
+    7400034: rig|walk
+    9500000: //RootNode
+    13700000: arms
+    13700002: arms_full
+    13700004: bullet_9mm
+    13700006: bullet_9mm_empty
+    13700008: G17
+    13700010: G17_mag
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: rig|ADS_off
+      takeName: rig|ADS_off
+      firstFrame: 1
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|ADS_on
+      takeName: rig|ADS_on
+      firstFrame: 1
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|attack
+      takeName: rig|attack
+      firstFrame: 1
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|attack_fail
+      takeName: rig|attack_fail
+      firstFrame: 1
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|draw
+      takeName: rig|draw
+      firstFrame: 1
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|draw_slide
+      takeName: rig|draw_slide
+      firstFrame: 1
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|hide
+      takeName: rig|hide
+      firstFrame: 1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|idle
+      takeName: rig|idle
+      firstFrame: 1
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|crawl
+      takeName: rig|crawl
+      firstFrame: 1
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|idle_move1
+      takeName: rig|idle_move1
+      firstFrame: 1
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|inspect
+      takeName: rig|inspect
+      firstFrame: 1
+      lastFrame: 281
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|ref_ads
+      takeName: rig|ref_ads
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|ref_empty
+      takeName: rig|ref_empty
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|ref_idle
+      takeName: rig|ref_idle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|reload
+      takeName: rig|reload
+      firstFrame: 1
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|reload_tactical
+      takeName: rig|reload_tactical
+      firstFrame: 1
+      lastFrame: 74
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|run
+      takeName: rig|run
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|walk
+      takeName: rig|walk
+      firstFrame: 1
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: arms_full
+        weight: 1
+      - path: bullet_9mm
+        weight: 1
+      - path: bullet_9mm_empty
+        weight: 1
+      - path: G17
+        weight: 1
+      - path: G17_mag
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/arm_ik.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/finger_thumb_base.L/finger_thumb_mid.L/finger_thumb_tip.L/finger_thumb_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_index_base.L/finger_index_base.L/finger_index_mid.L/finger_index_tip.L/finger_index_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_middle_base.L/finger_middle_base.L/finger_middle_mid.L/finger_middle_tip.L/finger_middle_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_pinky_base.L/finger_pinky_base.L/finger_pinky_mid.L/finger_pinky_tip.L/finger_pinky_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L
+        weight: 1
+      - path: rig/arm_ik.L/hand_ring_base.L/finger_ring_base.L/finger_ring_mid.L/finger_ring_tip.L/finger_ring_tip.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_down.L/shape_wrist_twist_down.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_in.L/shape_wrist_twist_in.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_out.L/shape_wrist_twist_out.L_end
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L
+        weight: 1
+      - path: rig/arm_ik.L/shape_wrist_twist_up.L/shape_wrist_twist_up.L_end
+        weight: 1
+      - path: rig/arm_ik.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/finger_thumb_base.R/finger_thumb_mid.R/finger_thumb_tip.R/finger_thumb_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_index_base.R/finger_index_base.R/finger_index_mid.R/finger_index_tip.R/finger_index_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_middle_base.R/finger_middle_base.R/finger_middle_mid.R/finger_middle_tip.R/finger_middle_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_pinky_base.R/finger_pinky_base.R/finger_pinky_mid.R/finger_pinky_tip.R/finger_pinky_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R
+        weight: 1
+      - path: rig/arm_ik.R/hand_ring_base.R/finger_ring_base.R/finger_ring_mid.R/finger_ring_tip.R/finger_ring_tip.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_down.R/shape_wrist_twist_down.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_in.R/shape_wrist_twist_in.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_out.R/shape_wrist_twist_out.R_end
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R
+        weight: 1
+      - path: rig/arm_ik.R/shape_wrist_twist_up.R/shape_wrist_twist_up.R_end
+        weight: 1
+      - path: rig/base
+        weight: 1
+      - path: rig/base/ads_ctrl
+        weight: 1
+      - path: rig/base/ads_ctrl/main
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide
+        weight: 1
+      - path: rig/base/ads_ctrl/main/slide/slide_end
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger
+        weight: 1
+      - path: rig/base/ads_ctrl/main/trigger/trigger_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/elbow_twist.L/elbow_twist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_main.L/forearm_main.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L
+        weight: 1
+      - path: rig/base/shoulder_ctrl.L/upperarm.L/forearm_twist_elbow.L/forearm_twist_mid.L/forearm_twist_wrist.L/forearm_twist_wrist.L_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/elbow_twist.R/elbow_twist.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_main.R/forearm_main.R_end
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R
+        weight: 1
+      - path: rig/base/shoulder_ctrl.R/upperarm.R/forearm_twist_elbow.R/forearm_twist_mid.R/forearm_twist_wrist.R/forearm_twist_wrist.R_end
+        weight: 1
+      - path: rig/mag
+        weight: 1
+      - path: rig/mag/mag_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

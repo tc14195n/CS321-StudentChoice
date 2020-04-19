@@ -1,0 +1,127 @@
+Hi, thanks for purchasing this asset. In this document you'll find information on how to use it properly,
+this includes information like item positions, animation times and some other stuff.
+
+Support email: mauriciomarinho2@gmail.com
+
+If you wish to reanimate or change the model, there's a zipped .blend file,
+it was created with blender version 2.76.9
+
+You can find it here https://builder.blender.org/download/
+
+If you like this asset and it has been useful for you, please consider leaving a rating and comment on
+the store page, I would appreciate it :)
+
+=======================================================================================================
+
+UPDATE 1.1
+
+- Added new rig.
+- Added new arms model and textures.
+- Added new animations: Inspect, Crawl and ADS transitions.
+- Animations overhaul and name changes.
+- Remade textures from scratch, now with higher quality, more accurate.
+- Added Ambient Occlusion map.
+- Added two new skins.
+
+Name changes done to better match other and future assets, also done to simplify coding:
+
+- "shoot" animation now refered to as "attack"
+- "drawAndSlide" to "draw_slide"
+- "reloadEmpty" to "reload"
+- "reloadFull" to "reload_tactical"
+- "running" to "run"
+- "walking" to "walk"
+- "reference" to "ref_idle"
+- "referenceADS" to "ref_ADS"
+- "referenceEmpty" to "ref_empty"
+
+=======================================================================================================
+
+Animations time:
+
+ADS_off / 1-15
+ADS_on / 1-15
+Attack (shoot) / 1-12 / Ready again on 6
+Attack fail (shoot empty) / 1-6
+Crawl / 1-32 / loop
+Draw / 1-35
+Draw and Slide / 1-62
+Hide / 1-19
+Idle / 1-240 / loop
+Idle move 1 / 1-70
+Inspect / 1-281
+Reload / 1-90
+Reload Tactical / 1-74
+Run / 1-24 / loop
+Walk / 1-28 / loop
+
+=======================================================================================================
+
+Camera settings:
+
+FOV 27.7 (make it a viewmodel, don't use a fov so low for your main game camera)
+Clipping plane Near at 0.1
+Position X:0 Y:0.08 Z:0.1
+Rotation X:0 Y:-180 Z:0
+
+ADS Camera:
+
+FOV 25.7
+Clipping plane Near at 0.1
+Position X:0 Y:0.1 Z:0.02
+Rotation X:0 Y:-180 Z:0
+
+A Camera with these settings are provided in the prefab.
+
+=======================================================================================================
+
+Textures:
+
+These were made with Substance Painter, in order to work right, you need to set your player
+settings color space to linear, instead of gamma.
+
+Here's more info on that:
+
+https://support.allegorithmic.com/documentation/display/SPDOC/Unity+5
+
+=======================================================================================================
+
+Polycount:
+
+G17:
+
+  Tris 6,292
+
+Bullet:
+
+  Tris 288
+
+Empty bullet:
+
+  Tris 120
+
+Arms
+
+  Tris 5,744
+
+Arms with clothing
+
+  Tris 6,580
+
+  =======================================================================================================
+
+  Suggestions:
+
+  Spawn a bullet at the bolt carrier at every shot.
+
+  There are some parts inside the gun, that might be visible, depending on how you set it up. Sometimes
+  you may want to use double sided faces.
+
+  Have a look at the .blend file if you need to replicate the rig in unity.
+
+  This was created with blender version 2.76.9 (hash 50a19cc, date 2016-02-04) use this version or
+  higher if you spot any weird issues.
+
+  Use a SSS shader on the hands for a better look.
+
+  Add some camera shake when shooting.
