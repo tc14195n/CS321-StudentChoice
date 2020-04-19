@@ -5,6 +5,7 @@ using UnityEngine;
 public class ZombieRagdoll : MonoBehaviour
 {
     public GameObject[] limbs;
+    public GameObject[] limbJoints;
 
     /* Element 0: head
      * Element 1: ArmL
@@ -26,6 +27,7 @@ public class ZombieRagdoll : MonoBehaviour
             if (bodyparts[i] == true && limbs[i].activeSelf != false) // if this limb is missing then...
             {                
                 limbs[i].SetActive(false); //remove the missing limb
+                limbJoints[i].SetActive(false); //remove limb colliders
             }
             
         }

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class DestroyAfterSecs : MonoBehaviour
 {
+    public float time = 10f;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 10f); 
+        Destroy(gameObject, time); 
     }
 }

@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 424788162311110653}
   m_Layer: 0
   m_Name: Head_M
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 9120070651278928826}
   m_Layer: 0
   m_Name: Spine1_M
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2908,7 +2908,7 @@ GameObject:
   - component: {fileID: 6719533559215901783}
   m_Layer: 0
   m_Name: Hip_R
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3466,7 +3466,7 @@ GameObject:
   - component: {fileID: 6834369634892036745}
   m_Layer: 0
   m_Name: Root_M
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3876,7 +3876,7 @@ GameObject:
   - component: {fileID: 880890169253835555}
   m_Layer: 0
   m_Name: Hip_L
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4208,7 +4208,7 @@ GameObject:
   - component: {fileID: 1359117051530993527}
   m_Layer: 0
   m_Name: ZombieAARagdoll
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4272,6 +4272,18 @@ MonoBehaviour:
   - {fileID: 7604191692109653006}
   - {fileID: 7604191692109876974}
   - {fileID: 7604191692109657526}
+  limbJoints:
+  - {fileID: 7604191692109645412}
+  - {fileID: 7604191692109735180}
+  - {fileID: 7604191692109644982}
+  - {fileID: 7604191692109888388}
+  - {fileID: 7604191692109696158}
+  - {fileID: 7604191692109648642}
+  - {fileID: 7604191692109647886}
+  - {fileID: 7604191692109878912}
+  - {fileID: 7604191692109699008}
+  - {fileID: 7604191692109699502}
+  - {fileID: 7604191692109675752}
 --- !u!114 &1359117051530993527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4284,6 +4296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09d97cd7dc2f2634baa44d3f9097d905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 10
 --- !u!1 &7604191692109895950
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,8 +8,8 @@ Shader "KriptoFX/FPS_Pack/AlphaBlendedAnim" {
 		Category{
 		Tags{ "Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Transparent" "PreviewType" = "Plane" }
 		Blend SrcAlpha OneMinusSrcAlpha
-		
-		Cull Off 
+
+		Cull Off
 		ZWrite Off
 
 		SubShader{
@@ -70,7 +70,7 @@ Shader "KriptoFX/FPS_Pack/AlphaBlendedAnim" {
 			half normalizedDist = length(lightDir) / RFX4_LightPositions[i].w;
 			fixed attenuation = tex2Dlod(RFX4_PointLightAttenuation, half4(normalizedDist.xx, 0, 0));
 			attenuation = lerp(1, attenuation, RFX4_LightColors[i].w);
-			float diff = max(0, dot(normalize(worldNormal), normalize(lightDir)));
+			float diff = abs(dot(normalize(worldNormal), normalize(lightDir)));
 			lightColor += RFX4_LightColors[i].rgb * (diff * attenuation);
 		}
 		return (lightColor);
@@ -101,7 +101,7 @@ Shader "KriptoFX/FPS_Pack/AlphaBlendedAnim" {
 
 	fixed4 frag(v2f i) : SV_Target
 	{
-		
+
 #ifdef SOFTPARTICLES_ON
 		float sceneZ = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)));
 		float partZ = i.projPos.z;

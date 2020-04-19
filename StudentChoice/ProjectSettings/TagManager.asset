@@ -8,6 +8,16 @@ TagManager:
   - Limbs
   - Body
   - Head
+  - Wood
+  - Water
+  - Rock
+  - Plaster
+  - Metal
+  - Glass
+  - Foliage
+  - Dirt
+  - Concrete
+  - Brick
   layers:
   - Default
   - TransparentFX
@@ -18,7 +28,7 @@ TagManager:
   - 
   - 
   - Ground
-  - 
+  - PostProcessing
   - 
   - 
   - 

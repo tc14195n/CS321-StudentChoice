@@ -14,17 +14,17 @@ Category {
 
 	Tags { "Queue"="Transparent+1"  "IgnoreProjector"="True"  "RenderType"="Transparent" }
 	Blend SrcAlpha OneMinusSrcAlpha
-	Cull Off 
-	ZWrite Off 
-	
+	Cull Off
+	ZWrite Off
+
 
 	SubShader {
-		GrabPass {							
+		GrabPass {
 			"_GrabTextureGlass"
  		}
 		Pass {
-			
-			
+
+
 CGPROGRAM
 #pragma vertex vert
 #pragma fragment frag
@@ -44,12 +44,12 @@ struct v2f {
 	float4 uvgrab : TEXCOORD0;
 	float4 uvbump : TEXCOORD1;
 	fixed4 color : COLOR;
-	
+
 	#ifdef SOFTPARTICLES_ON
 		float4 projPos : TEXCOORD4;
 	#endif
 		fixed blend : TEXCOORD6;
-	
+
 };
 
 sampler2D _MainTex;
@@ -60,7 +60,7 @@ float _ColorStrength;
 sampler2D _GrabTextureGlass;
 float4 _GrabTexture_TexelSize;
 fixed4 _TintColor;
-float4 _LightColor0; 
+float4 _LightColor0;
 
 float4 _BumpMap_ST;
 float4 _MainTex_ST;
@@ -120,33 +120,33 @@ half4 frag( v2f i ) : COLOR
 	fixed4 bumpTex2 = tex2D(_BumpMap, i.uvbump.zw);
 	half3 bump = UnpackNormal(lerp(bumpTex1, bumpTex2, i.blend));
 	half alphaBump = saturate((0.94 - pow(bump.z, 127)) * 5);
-	
+
 	if (alphaBump < 0.1) discard;
-	
+
 
 	fixed4 tex = tex2D(_MainTex, i.uvbump.xy);
 	fixed4 tex2 = tex2D(_MainTex, i.uvbump.zw);
 	tex = lerp(tex, tex2, i.blend);
 
-	
+
 	float2 offset = bump * _BumpAmt  * i.color.a * alphaBump;
 	i.uvgrab.xy = offset  + i.uvgrab.xy;
-	
+
 	half4 grab = tex2Dlod(_GrabTextureGlass, float4(i.uvgrab.xy / i.uvgrab.w, 0, 0));
-	
-	
+
+
 	//fixed4 cut = tex2D(_CutOut, i.uvcutout) * i.color;
 	//fixed4 emission = col * i.color + tex.r * _ColorStrength * _TintColor * _LightColor0 * i.color * i.color.a;
 	fixed4 emission = grab + tex.a * _TintColor * i.color * i.color.a;
     emission.a = _TintColor.a * alphaBump ;
-	
+
 	return saturate(emission);
 }
 ENDCG
 		}
 	}
 
-	
+
 }
 
 }

@@ -46,4 +46,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
-    - _TintColor: {r: 0.68382347, g: 0.85608524, b: 1, a: 1}
+    - _TintColor: {r: 0.3013083, g: 0.32724565, b: 0.3490566, a: 1}
