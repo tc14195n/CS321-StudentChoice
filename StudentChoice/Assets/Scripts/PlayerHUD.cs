@@ -30,6 +30,6 @@ public class PlayerHUD : MonoBehaviour
         {
             healthSlider.color = Color.Lerp(Color.red, Color.white, Mathf.PingPong(Time.time, 1));
         }
-        ammoLabel.text = inv.loadout.currentWeapon.ammoLeftInMag.ToString() + " /";
+        ammoLabel.text = inv.loadout.currentWeapon.getAmmoCount().ToString() + " /";
     }
 }

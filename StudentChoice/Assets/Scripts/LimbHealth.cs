@@ -11,7 +11,7 @@ public class LimbHealth : MonoBehaviour
     {
 
         //TODO: add gore or body part
-        //GameObject bodyPart = Instantiate(limb, limb.transform.position, limb.transform.rotation);
+        //GameObject bodyPart = Instantiate(limb, limb.transform.position, limb.transform.rotation);        
         Destroy(limb);
         //gameObject.SetActive(false);
     }

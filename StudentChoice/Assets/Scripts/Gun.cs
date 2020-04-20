@@ -6,60 +6,153 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
-    public float damage;
-    public float fireRate;
-    public float impactForce;
-    public float limbsDamageMultiplier, bodyDamageMultiplier, headDamageMultiplier;
+    [SerializeField] Camera cam = null;
+    [SerializeField] Animator animator = null;
+    [SerializeField] PlayerMove playerMove = null;
 
-    public int magSize = 30;
-    public float reloadspeed = 1;
-    public int ammoLeftInMag;
-    private bool isReloading;
-    public Animator animator;
+    [SerializeField] Vector3 gunPos = new Vector3(0.03f, -0.12f, 0.03f);
+    [SerializeField] Vector3 aimPos = new Vector3(-0.0665f, -0.07f, -0.09f);
+
+    private enum FireMode { SemiAuto, FullAuto, BurstFire}
+    [SerializeField]  FireMode SelectFire = FireMode.SemiAuto;
+
+    [SerializeField] float damage = 10;
+    [SerializeField] float RPM = 100;
+    [SerializeField] float impactForce = 100;
+    [SerializeField] float limbsDamageMultiplier = 0.75f, bodyDamageMultiplier = 1f, headDamageMultiplier = 5f;
+
+    [SerializeField] int magSize = 30;
+    [SerializeField] float reloadSpeed = 1, adsSpeed = 1;
+    [SerializeField] int ammoLeftInMag;
 
 
-    public Transform muzzle;
-    public GameObject muzzleFlash;
-    public GameObject enemyimpactFX, brickImpactFX, concreteImpactFX, dirtImpactFX, foliageImpactFX, glassImpactFX, metalImpactFX, plasterImpactFX, rockImpactFX, waterImpactFX, woodImpactFX;
 
-    public Camera cam;
+    [SerializeField] Transform muzzle = null;
+    [SerializeField] GameObject muzzleFlash = null;
+    [SerializeField] GameObject[] impactFX = new GameObject[11] ;
 
+    private bool isReloading, isShooting, firedShotAnim, doneshootingAnim;
     private float shootCooldown;
+    private Collider limbCollider;
 
     // Start is called before the first frame update
     void Start()
     {
         ammoLeftInMag = magSize;
+        transform.localPosition = gunPos;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isReloading)
-        {
-            return;
-        }
 
-        if (ammoLeftInMag <= 0 || (Input.GetKeyDown(KeyCode.R) && ammoLeftInMag < magSize))
+        if ((Input.GetKeyDown(KeyCode.R) && ammoLeftInMag < magSize + 1) && !isReloading) // reload when you press R and you have less ammo than the max + 1 to account for the round in the chamber
         {
             StartCoroutine(Reload());
             return;
         }
-        if(Input.GetButton("Fire1") && Time.time >= shootCooldown)
+
+
+        if(ammoLeftInMag == 0)
         {
-            shootCooldown = Time.time + 1f / fireRate;
-            shoot();
+            animator.SetBool("Empty", true);
+        }
+
+        if (Input.GetButtonDown("Fire2"))
+        {
+            transform.localPosition = Vector3.Slerp(aimPos, gunPos, adsSpeed * Time.deltaTime);
+            //animator.SetBool("ADS", true);
+        }
+        else if (Input.GetButtonUp("Fire2"))
+        {           
+            transform.localPosition = Vector3.Slerp(gunPos, aimPos, adsSpeed * Time.deltaTime);
+            // animator.SetBool("ADS", false);
+        }
+
+        if (playerMove.isMoving && !isShooting)
+        {
+            animator.SetBool("Walking", true);
+        }
+        else if (!isShooting)
+        {
+            animator.SetBool("Walking", false);
+        }
+        switch (SelectFire)
+        {
+            case FireMode.SemiAuto:
+                if (Input.GetButtonDown("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
+                {
+                    StartCoroutine(ShootSemiAuto());
+                }
+                break;
+            case FireMode.FullAuto:
+                if (Input.GetButton("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
+                {
+                    StartCoroutine(ShootFullAuto(RPM));
+                }
+                break;
+            case FireMode.BurstFire:
+                if (Input.GetButton("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
+                {
+                    StartCoroutine(ShootBurst(RPM));
+                }
+                break;
+            default:
+                break;
         }
     }
+    
 
-   IEnumerator Reload()
+    IEnumerator Reload()
     {
         isReloading = true;
         animator.SetBool("Reloading", true);
-        yield return new WaitForSeconds(reloadspeed);
-        ammoLeftInMag = magSize;
+        animator.SetBool("Walking", false);
+        yield return new WaitForSeconds(reloadSpeed);
+        if (ammoLeftInMag > 0)
+        {
+            ammoLeftInMag = magSize + 1; // load one into chamber if the gun wasnt empty
+        }
+        else
+        {
+            ammoLeftInMag = magSize; // normal reload when the weapon is empty
+        }
+        animator.SetBool("Empty", false);
         animator.SetBool("Reloading", false);
         isReloading = false;
+    }
+
+    IEnumerator ShootSemiAuto()
+    {
+
+        isShooting = true;
+        shoot();
+        animator.SetBool("Shot", true);
+        yield return new WaitForSeconds(0.25f);
+        isShooting = false;
+        animator.SetBool("Shot", false);
+    }
+
+    IEnumerator ShootFullAuto(float RPM)
+    {
+        isShooting = true;
+        shoot();
+        animator.SetBool("Shot", true);
+        float time = (RPM / 60000); // convert to MS
+        yield return new WaitForSeconds(time);
+        isShooting = false;
+        animator.SetBool("Shot", false);
+    }
+
+    IEnumerator ShootBurst(float RPM)
+    {
+        isShooting = true;
+        shoot();
+        animator.SetBool("Shot", true);
+        float time = (RPM / 60000); // convert to MS
+        yield return new WaitForSeconds(time);
+        isShooting = false;
+        animator.SetBool("Shot", false);
     }
 
     private void shoot()
@@ -67,95 +160,111 @@ public class Gun : MonoBehaviour
         ammoLeftInMag--;
         Instantiate(muzzleFlash, muzzle);
         RaycastHit hit;
+       
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
         {
             //    Debug.Log(hit.transform.tag);
             //    Debug.Log(hit.transform.name);
-            ZombieHealthController zombie = hit.transform.GetComponentInParent<ZombieHealthController>();
+            ZombieHealthController zombie;
 
             if (hit.transform.tag.CompareTo("Head") == 0)
             {
                 zombie = hit.transform.GetComponentInParent<ZombieHealthController>();
                 zombie.Damage(damage, headDamageMultiplier, "Head");
-                Instantiate(enemyimpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[0], hit.point, Quaternion.LookRotation(hit.normal));
             }
 
             else if (hit.transform.tag.CompareTo("Body") == 0)
             {
                 zombie = hit.transform.GetComponentInParent<ZombieHealthController>();
                 zombie.Damage(damage, bodyDamageMultiplier, "Body");
-                Instantiate(enemyimpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[0], hit.point, Quaternion.LookRotation(hit.normal));
                 // Debug.Log(zombie.health);
             }
 
             else if (hit.transform.tag.CompareTo("Limbs") == 0)
             {
                 zombie = hit.transform.GetComponentInParent<ZombieHealthController>();
-                zombie.DamageLimbs(damage, limbsDamageMultiplier, hit.transform.name);
-                Instantiate(enemyimpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                int i = zombie.DamageLimbs(damage, limbsDamageMultiplier, hit.transform.name);
+                if (i == 0)
+                {
+                    limbCollider = hit.transform.GetComponent<Collider>();
+                    limbCollider.enabled = false;
+
+                    i = 1;
+                    int c = 0;
+                    while (i != 0 || c != 5)
+                    {
+                        
+                        if (limbCollider.GetComponentInChildren<Collider>() != null)
+                        {
+                            limbCollider = limbCollider.GetComponentInChildren<Collider>();
+                            limbCollider.enabled = false;
+                            i = limbCollider.gameObject.GetComponentInChildren<Transform>().childCount;
+                        }                        
+                        c++;
+                       
+                    }
+                }
+                Instantiate(impactFX[0], hit.point, Quaternion.LookRotation(hit.normal));
                 // Debug.Log(zombie.health);
             }
 
-            else if (hit.transform.tag.CompareTo("Body") == 0)
-            {
-                zombie = hit.transform.GetComponentInParent<ZombieHealthController>();
-                zombie.Damage(damage, headDamageMultiplier);
-                Instantiate(enemyimpactFX, hit.point, Quaternion.LookRotation(hit.normal));
-            }
             else if (hit.transform.tag.CompareTo("Enemy") == 0)
             {
-                Instantiate(enemyimpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[0], hit.point, Quaternion.LookRotation(hit.normal));
             }
             else if (hit.transform.tag.CompareTo("Brick") == 0)
             {
-                Instantiate(brickImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[1], hit.point, Quaternion.LookRotation(hit.normal));
             }
             else if (hit.transform.tag.CompareTo("Concrete") == 0)
             {
-                Instantiate(concreteImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[2], hit.point, Quaternion.LookRotation(hit.normal));
             }
 
             else if (hit.transform.tag.CompareTo("Dirt") == 0)
             {
-                Instantiate(dirtImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[3], hit.point, Quaternion.LookRotation(hit.normal));
             }
             else if (hit.transform.tag.CompareTo("Foliage") == 0)
             {
-                Instantiate(foliageImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[4], hit.point, Quaternion.LookRotation(hit.normal));
             }
             else if (hit.transform.tag.CompareTo("Glass") == 0)
             {
-                Instantiate(glassImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[5], hit.point, Quaternion.LookRotation(hit.normal));
             }
             else if (hit.transform.tag.CompareTo("Metal") == 0)
             {
-                Instantiate(metalImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[6], hit.point, Quaternion.LookRotation(hit.normal));
             }
             else if (hit.transform.tag.CompareTo("Plaster") == 0)
             {
-                Instantiate(plasterImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[7], hit.point, Quaternion.LookRotation(hit.normal));
             }
             else if (hit.transform.tag.CompareTo("Rock") == 0)
             {
-                Instantiate(rockImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[8], hit.point, Quaternion.LookRotation(hit.normal));
             }
             else if (hit.transform.tag.CompareTo("Water") == 0)
             {
-                Instantiate(waterImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[9], hit.point, Quaternion.LookRotation(hit.normal));
             }
             else if (hit.transform.tag.CompareTo("Wood") == 0)
             {
-                Instantiate(woodImpactFX, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(impactFX[10], hit.point, Quaternion.LookRotation(hit.normal));
             }
 
             if (hit.rigidbody != null)
             {
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
-            }
-            
-
+            }                              
         }
+    }
 
-
+    public int getAmmoCount()
+    {
+        return ammoLeftInMag;
     }
 }

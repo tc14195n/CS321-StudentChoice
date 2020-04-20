@@ -55,7 +55,7 @@ public class ZombieHealthController : MonoBehaviour
         }
     }
 
-    public void DamageLimbs(float damage, float multiplier, string bodyPart) //Limbs
+    public int DamageLimbs(float damage, float multiplier, string bodyPart) //Limbs
     {      
         
         //todo add a check to see what limb was hit and this effects zombie walk/ attack
@@ -73,21 +73,24 @@ public class ZombieHealthController : MonoBehaviour
                     //TODO: spawn destroyed body parts
                     dismemberedLimbs[i+1] = true; // takes note of which limb was destroyed (i+1 as the head on our check list is the first element)
                     limbhit.DismemberLimb(limbs[i]);
+                    
                     if(i >= 6)
                     {
                         legShot = true; // used to make the zombie crawl in the zombieAIController script
                         //zomAI.zombieState = ZombieAIController.ZombieState.crawling; // make the zombie crawl when missing a leg (all leg parts are <=6 in the index)
                     }
                     Destroy(limbs[i]); //destroy limb if health is less than zero
-
+                    return 0;
                 }
             }
+            
         }
 
         if (health <= 0) //death
         {
             Die();
         }
+        return 1;
     }
 
     private void Die()

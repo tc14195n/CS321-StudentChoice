@@ -8,6 +8,7 @@ public class PlayerMove : MonoBehaviour
     private CharacterController cC;
     public float moveSpeed, jump;
     public float gravity = -9.81f;
+    public bool isMoving;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -15,7 +16,7 @@ public class PlayerMove : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isMoving = false;
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if(isGrounded && velocity.y < 0)
@@ -33,7 +35,11 @@ public class PlayerMove : MonoBehaviour
         }
 
         x = Input.GetAxis("Horizontal");
-        z = Input.GetAxis("Vertical");
+        z = Input.GetAxis("Vertical");       
+        if(x != 0 || z !=0 )
+        {
+            isMoving = true;
+        }
         cC.Move((transform.right * x + transform.forward *z) * moveSpeed * Time.deltaTime);
         if (Input.GetButtonDown("Jump") && isGrounded)
         {

@@ -4,267 +4,752 @@ labels:
 - Gun
 - Weapon
 - Prop
-timeCreated: 1456506248
-licenseType: Store
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: ads_ctrl
-    100002: arm_ik.L
-    100004: arm_ik.R
-    100006: arms
-    100008: arms_full
-    100010: base
-    100012: bullet_9mm
-    100014: bullet_9mm_empty
-    100016: elbow_twist.L
-    100018: elbow_twist.L_end
-    100020: elbow_twist.R
-    100022: elbow_twist.R_end
-    100024: finger_index_base.L
-    100026: finger_index_base.R
-    100028: finger_index_mid.L
-    100030: finger_index_mid.R
-    100032: finger_index_tip.L
-    100034: finger_index_tip.L_end
-    100036: finger_index_tip.R
-    100038: finger_index_tip.R_end
-    100040: finger_middle_base.L
-    100042: finger_middle_base.R
-    100044: finger_middle_mid.L
-    100046: finger_middle_mid.R
-    100048: finger_middle_tip.L
-    100050: finger_middle_tip.L_end
-    100052: finger_middle_tip.R
-    100054: finger_middle_tip.R_end
-    100056: finger_pinky_base.L
-    100058: finger_pinky_base.R
-    100060: finger_pinky_mid.L
-    100062: finger_pinky_mid.R
-    100064: finger_pinky_tip.L
-    100066: finger_pinky_tip.L_end
-    100068: finger_pinky_tip.R
-    100070: finger_pinky_tip.R_end
-    100072: finger_ring_base.L
-    100074: finger_ring_base.R
-    100076: finger_ring_mid.L
-    100078: finger_ring_mid.R
-    100080: finger_ring_tip.L
-    100082: finger_ring_tip.L_end
-    100084: finger_ring_tip.R
-    100086: finger_ring_tip.R_end
-    100088: finger_thumb_base.L
-    100090: finger_thumb_base.R
-    100092: finger_thumb_mid.L
-    100094: finger_thumb_mid.R
-    100096: finger_thumb_tip.L
-    100098: finger_thumb_tip.L_end
-    100100: finger_thumb_tip.R
-    100102: finger_thumb_tip.R_end
-    100104: forearm_main.L
-    100106: forearm_main.L_end
-    100108: forearm_main.R
-    100110: forearm_main.R_end
-    100112: forearm_twist_elbow.L
-    100114: forearm_twist_elbow.R
-    100116: forearm_twist_mid.L
-    100118: forearm_twist_mid.R
-    100120: forearm_twist_wrist.L
-    100122: forearm_twist_wrist.L_end
-    100124: forearm_twist_wrist.R
-    100126: forearm_twist_wrist.R_end
-    100128: //RootNode
-    100130: G17
-    100132: G17_mag
-    100134: hand_index_base.L
-    100136: hand_index_base.R
-    100138: hand_middle_base.L
-    100140: hand_middle_base.R
-    100142: hand_pinky_base.L
-    100144: hand_pinky_base.R
-    100146: hand_ring_base.L
-    100148: hand_ring_base.R
-    100150: mag
-    100152: mag_end
-    100154: main
-    100156: rig
-    100158: shape_wrist_twist_down.L
-    100160: shape_wrist_twist_down.L_end
-    100162: shape_wrist_twist_down.R
-    100164: shape_wrist_twist_down.R_end
-    100166: shape_wrist_twist_in.L
-    100168: shape_wrist_twist_in.L_end
-    100170: shape_wrist_twist_in.R
-    100172: shape_wrist_twist_in.R_end
-    100174: shape_wrist_twist_out.L
-    100176: shape_wrist_twist_out.L_end
-    100178: shape_wrist_twist_out.R
-    100180: shape_wrist_twist_out.R_end
-    100182: shape_wrist_twist_up.L
-    100184: shape_wrist_twist_up.L_end
-    100186: shape_wrist_twist_up.R
-    100188: shape_wrist_twist_up.R_end
-    100190: shoulder_ctrl.L
-    100192: shoulder_ctrl.R
-    100194: slide
-    100196: slide_end
-    100198: trigger
-    100200: trigger_end
-    100202: upperarm.L
-    100204: upperarm.R
-    400000: ads_ctrl
-    400002: arm_ik.L
-    400004: arm_ik.R
-    400006: arms
-    400008: arms_full
-    400010: base
-    400012: bullet_9mm
-    400014: bullet_9mm_empty
-    400016: elbow_twist.L
-    400018: elbow_twist.L_end
-    400020: elbow_twist.R
-    400022: elbow_twist.R_end
-    400024: finger_index_base.L
-    400026: finger_index_base.R
-    400028: finger_index_mid.L
-    400030: finger_index_mid.R
-    400032: finger_index_tip.L
-    400034: finger_index_tip.L_end
-    400036: finger_index_tip.R
-    400038: finger_index_tip.R_end
-    400040: finger_middle_base.L
-    400042: finger_middle_base.R
-    400044: finger_middle_mid.L
-    400046: finger_middle_mid.R
-    400048: finger_middle_tip.L
-    400050: finger_middle_tip.L_end
-    400052: finger_middle_tip.R
-    400054: finger_middle_tip.R_end
-    400056: finger_pinky_base.L
-    400058: finger_pinky_base.R
-    400060: finger_pinky_mid.L
-    400062: finger_pinky_mid.R
-    400064: finger_pinky_tip.L
-    400066: finger_pinky_tip.L_end
-    400068: finger_pinky_tip.R
-    400070: finger_pinky_tip.R_end
-    400072: finger_ring_base.L
-    400074: finger_ring_base.R
-    400076: finger_ring_mid.L
-    400078: finger_ring_mid.R
-    400080: finger_ring_tip.L
-    400082: finger_ring_tip.L_end
-    400084: finger_ring_tip.R
-    400086: finger_ring_tip.R_end
-    400088: finger_thumb_base.L
-    400090: finger_thumb_base.R
-    400092: finger_thumb_mid.L
-    400094: finger_thumb_mid.R
-    400096: finger_thumb_tip.L
-    400098: finger_thumb_tip.L_end
-    400100: finger_thumb_tip.R
-    400102: finger_thumb_tip.R_end
-    400104: forearm_main.L
-    400106: forearm_main.L_end
-    400108: forearm_main.R
-    400110: forearm_main.R_end
-    400112: forearm_twist_elbow.L
-    400114: forearm_twist_elbow.R
-    400116: forearm_twist_mid.L
-    400118: forearm_twist_mid.R
-    400120: forearm_twist_wrist.L
-    400122: forearm_twist_wrist.L_end
-    400124: forearm_twist_wrist.R
-    400126: forearm_twist_wrist.R_end
-    400128: //RootNode
-    400130: G17
-    400132: G17_mag
-    400134: hand_index_base.L
-    400136: hand_index_base.R
-    400138: hand_middle_base.L
-    400140: hand_middle_base.R
-    400142: hand_pinky_base.L
-    400144: hand_pinky_base.R
-    400146: hand_ring_base.L
-    400148: hand_ring_base.R
-    400150: mag
-    400152: mag_end
-    400154: main
-    400156: rig
-    400158: shape_wrist_twist_down.L
-    400160: shape_wrist_twist_down.L_end
-    400162: shape_wrist_twist_down.R
-    400164: shape_wrist_twist_down.R_end
-    400166: shape_wrist_twist_in.L
-    400168: shape_wrist_twist_in.L_end
-    400170: shape_wrist_twist_in.R
-    400172: shape_wrist_twist_in.R_end
-    400174: shape_wrist_twist_out.L
-    400176: shape_wrist_twist_out.L_end
-    400178: shape_wrist_twist_out.R
-    400180: shape_wrist_twist_out.R_end
-    400182: shape_wrist_twist_up.L
-    400184: shape_wrist_twist_up.L_end
-    400186: shape_wrist_twist_up.R
-    400188: shape_wrist_twist_up.R_end
-    400190: shoulder_ctrl.L
-    400192: shoulder_ctrl.R
-    400194: slide
-    400196: slide_end
-    400198: trigger
-    400200: trigger_end
-    400202: upperarm.L
-    400204: upperarm.R
-    4300000: bullet_9mm
-    4300002: bullet_9mm_empty
-    4300004: G17
-    4300006: G17_mag
-    4300008: arms
-    4300010: arms_full
-    7400000: rig|ADS_off
-    7400002: rig|ADS_on
-    7400004: rig|attack
-    7400006: rig|attack_fail
-    7400008: rig|draw
-    7400010: rig|draw_slide
-    7400012: rig|hide
-    7400014: rig|idle
-    7400016: rig|crawl
-    7400018: rig|idle_move1
-    7400020: rig|inspect
-    7400022: rig|ref_ads
-    7400024: rig|ref_empty
-    7400026: rig|ref_idle
-    7400028: rig|reload
-    7400030: rig|reload_tactical
-    7400032: rig|run
-    7400034: rig|walk
-    9500000: //RootNode
-    13700000: arms
-    13700002: arms_full
-    13700004: bullet_9mm
-    13700006: bullet_9mm_empty
-    13700008: G17
-    13700010: G17_mag
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: ads_ctrl
+  - first:
+      1: 100002
+    second: arm_ik.L
+  - first:
+      1: 100004
+    second: arm_ik.R
+  - first:
+      1: 100006
+    second: arms
+  - first:
+      1: 100008
+    second: arms_full
+  - first:
+      1: 100010
+    second: base
+  - first:
+      1: 100012
+    second: bullet_9mm
+  - first:
+      1: 100014
+    second: bullet_9mm_empty
+  - first:
+      1: 100016
+    second: elbow_twist.L
+  - first:
+      1: 100018
+    second: elbow_twist.L_end
+  - first:
+      1: 100020
+    second: elbow_twist.R
+  - first:
+      1: 100022
+    second: elbow_twist.R_end
+  - first:
+      1: 100024
+    second: finger_index_base.L
+  - first:
+      1: 100026
+    second: finger_index_base.R
+  - first:
+      1: 100028
+    second: finger_index_mid.L
+  - first:
+      1: 100030
+    second: finger_index_mid.R
+  - first:
+      1: 100032
+    second: finger_index_tip.L
+  - first:
+      1: 100034
+    second: finger_index_tip.L_end
+  - first:
+      1: 100036
+    second: finger_index_tip.R
+  - first:
+      1: 100038
+    second: finger_index_tip.R_end
+  - first:
+      1: 100040
+    second: finger_middle_base.L
+  - first:
+      1: 100042
+    second: finger_middle_base.R
+  - first:
+      1: 100044
+    second: finger_middle_mid.L
+  - first:
+      1: 100046
+    second: finger_middle_mid.R
+  - first:
+      1: 100048
+    second: finger_middle_tip.L
+  - first:
+      1: 100050
+    second: finger_middle_tip.L_end
+  - first:
+      1: 100052
+    second: finger_middle_tip.R
+  - first:
+      1: 100054
+    second: finger_middle_tip.R_end
+  - first:
+      1: 100056
+    second: finger_pinky_base.L
+  - first:
+      1: 100058
+    second: finger_pinky_base.R
+  - first:
+      1: 100060
+    second: finger_pinky_mid.L
+  - first:
+      1: 100062
+    second: finger_pinky_mid.R
+  - first:
+      1: 100064
+    second: finger_pinky_tip.L
+  - first:
+      1: 100066
+    second: finger_pinky_tip.L_end
+  - first:
+      1: 100068
+    second: finger_pinky_tip.R
+  - first:
+      1: 100070
+    second: finger_pinky_tip.R_end
+  - first:
+      1: 100072
+    second: finger_ring_base.L
+  - first:
+      1: 100074
+    second: finger_ring_base.R
+  - first:
+      1: 100076
+    second: finger_ring_mid.L
+  - first:
+      1: 100078
+    second: finger_ring_mid.R
+  - first:
+      1: 100080
+    second: finger_ring_tip.L
+  - first:
+      1: 100082
+    second: finger_ring_tip.L_end
+  - first:
+      1: 100084
+    second: finger_ring_tip.R
+  - first:
+      1: 100086
+    second: finger_ring_tip.R_end
+  - first:
+      1: 100088
+    second: finger_thumb_base.L
+  - first:
+      1: 100090
+    second: finger_thumb_base.R
+  - first:
+      1: 100092
+    second: finger_thumb_mid.L
+  - first:
+      1: 100094
+    second: finger_thumb_mid.R
+  - first:
+      1: 100096
+    second: finger_thumb_tip.L
+  - first:
+      1: 100098
+    second: finger_thumb_tip.L_end
+  - first:
+      1: 100100
+    second: finger_thumb_tip.R
+  - first:
+      1: 100102
+    second: finger_thumb_tip.R_end
+  - first:
+      1: 100104
+    second: forearm_main.L
+  - first:
+      1: 100106
+    second: forearm_main.L_end
+  - first:
+      1: 100108
+    second: forearm_main.R
+  - first:
+      1: 100110
+    second: forearm_main.R_end
+  - first:
+      1: 100112
+    second: forearm_twist_elbow.L
+  - first:
+      1: 100114
+    second: forearm_twist_elbow.R
+  - first:
+      1: 100116
+    second: forearm_twist_mid.L
+  - first:
+      1: 100118
+    second: forearm_twist_mid.R
+  - first:
+      1: 100120
+    second: forearm_twist_wrist.L
+  - first:
+      1: 100122
+    second: forearm_twist_wrist.L_end
+  - first:
+      1: 100124
+    second: forearm_twist_wrist.R
+  - first:
+      1: 100126
+    second: forearm_twist_wrist.R_end
+  - first:
+      1: 100128
+    second: //RootNode
+  - first:
+      1: 100130
+    second: G17
+  - first:
+      1: 100132
+    second: G17_mag
+  - first:
+      1: 100134
+    second: hand_index_base.L
+  - first:
+      1: 100136
+    second: hand_index_base.R
+  - first:
+      1: 100138
+    second: hand_middle_base.L
+  - first:
+      1: 100140
+    second: hand_middle_base.R
+  - first:
+      1: 100142
+    second: hand_pinky_base.L
+  - first:
+      1: 100144
+    second: hand_pinky_base.R
+  - first:
+      1: 100146
+    second: hand_ring_base.L
+  - first:
+      1: 100148
+    second: hand_ring_base.R
+  - first:
+      1: 100150
+    second: mag
+  - first:
+      1: 100152
+    second: mag_end
+  - first:
+      1: 100154
+    second: main
+  - first:
+      1: 100156
+    second: rig
+  - first:
+      1: 100158
+    second: shape_wrist_twist_down.L
+  - first:
+      1: 100160
+    second: shape_wrist_twist_down.L_end
+  - first:
+      1: 100162
+    second: shape_wrist_twist_down.R
+  - first:
+      1: 100164
+    second: shape_wrist_twist_down.R_end
+  - first:
+      1: 100166
+    second: shape_wrist_twist_in.L
+  - first:
+      1: 100168
+    second: shape_wrist_twist_in.L_end
+  - first:
+      1: 100170
+    second: shape_wrist_twist_in.R
+  - first:
+      1: 100172
+    second: shape_wrist_twist_in.R_end
+  - first:
+      1: 100174
+    second: shape_wrist_twist_out.L
+  - first:
+      1: 100176
+    second: shape_wrist_twist_out.L_end
+  - first:
+      1: 100178
+    second: shape_wrist_twist_out.R
+  - first:
+      1: 100180
+    second: shape_wrist_twist_out.R_end
+  - first:
+      1: 100182
+    second: shape_wrist_twist_up.L
+  - first:
+      1: 100184
+    second: shape_wrist_twist_up.L_end
+  - first:
+      1: 100186
+    second: shape_wrist_twist_up.R
+  - first:
+      1: 100188
+    second: shape_wrist_twist_up.R_end
+  - first:
+      1: 100190
+    second: shoulder_ctrl.L
+  - first:
+      1: 100192
+    second: shoulder_ctrl.R
+  - first:
+      1: 100194
+    second: slide
+  - first:
+      1: 100196
+    second: slide_end
+  - first:
+      1: 100198
+    second: trigger
+  - first:
+      1: 100200
+    second: trigger_end
+  - first:
+      1: 100202
+    second: upperarm.L
+  - first:
+      1: 100204
+    second: upperarm.R
+  - first:
+      4: 400000
+    second: ads_ctrl
+  - first:
+      4: 400002
+    second: arm_ik.L
+  - first:
+      4: 400004
+    second: arm_ik.R
+  - first:
+      4: 400006
+    second: arms
+  - first:
+      4: 400008
+    second: arms_full
+  - first:
+      4: 400010
+    second: base
+  - first:
+      4: 400012
+    second: bullet_9mm
+  - first:
+      4: 400014
+    second: bullet_9mm_empty
+  - first:
+      4: 400016
+    second: elbow_twist.L
+  - first:
+      4: 400018
+    second: elbow_twist.L_end
+  - first:
+      4: 400020
+    second: elbow_twist.R
+  - first:
+      4: 400022
+    second: elbow_twist.R_end
+  - first:
+      4: 400024
+    second: finger_index_base.L
+  - first:
+      4: 400026
+    second: finger_index_base.R
+  - first:
+      4: 400028
+    second: finger_index_mid.L
+  - first:
+      4: 400030
+    second: finger_index_mid.R
+  - first:
+      4: 400032
+    second: finger_index_tip.L
+  - first:
+      4: 400034
+    second: finger_index_tip.L_end
+  - first:
+      4: 400036
+    second: finger_index_tip.R
+  - first:
+      4: 400038
+    second: finger_index_tip.R_end
+  - first:
+      4: 400040
+    second: finger_middle_base.L
+  - first:
+      4: 400042
+    second: finger_middle_base.R
+  - first:
+      4: 400044
+    second: finger_middle_mid.L
+  - first:
+      4: 400046
+    second: finger_middle_mid.R
+  - first:
+      4: 400048
+    second: finger_middle_tip.L
+  - first:
+      4: 400050
+    second: finger_middle_tip.L_end
+  - first:
+      4: 400052
+    second: finger_middle_tip.R
+  - first:
+      4: 400054
+    second: finger_middle_tip.R_end
+  - first:
+      4: 400056
+    second: finger_pinky_base.L
+  - first:
+      4: 400058
+    second: finger_pinky_base.R
+  - first:
+      4: 400060
+    second: finger_pinky_mid.L
+  - first:
+      4: 400062
+    second: finger_pinky_mid.R
+  - first:
+      4: 400064
+    second: finger_pinky_tip.L
+  - first:
+      4: 400066
+    second: finger_pinky_tip.L_end
+  - first:
+      4: 400068
+    second: finger_pinky_tip.R
+  - first:
+      4: 400070
+    second: finger_pinky_tip.R_end
+  - first:
+      4: 400072
+    second: finger_ring_base.L
+  - first:
+      4: 400074
+    second: finger_ring_base.R
+  - first:
+      4: 400076
+    second: finger_ring_mid.L
+  - first:
+      4: 400078
+    second: finger_ring_mid.R
+  - first:
+      4: 400080
+    second: finger_ring_tip.L
+  - first:
+      4: 400082
+    second: finger_ring_tip.L_end
+  - first:
+      4: 400084
+    second: finger_ring_tip.R
+  - first:
+      4: 400086
+    second: finger_ring_tip.R_end
+  - first:
+      4: 400088
+    second: finger_thumb_base.L
+  - first:
+      4: 400090
+    second: finger_thumb_base.R
+  - first:
+      4: 400092
+    second: finger_thumb_mid.L
+  - first:
+      4: 400094
+    second: finger_thumb_mid.R
+  - first:
+      4: 400096
+    second: finger_thumb_tip.L
+  - first:
+      4: 400098
+    second: finger_thumb_tip.L_end
+  - first:
+      4: 400100
+    second: finger_thumb_tip.R
+  - first:
+      4: 400102
+    second: finger_thumb_tip.R_end
+  - first:
+      4: 400104
+    second: forearm_main.L
+  - first:
+      4: 400106
+    second: forearm_main.L_end
+  - first:
+      4: 400108
+    second: forearm_main.R
+  - first:
+      4: 400110
+    second: forearm_main.R_end
+  - first:
+      4: 400112
+    second: forearm_twist_elbow.L
+  - first:
+      4: 400114
+    second: forearm_twist_elbow.R
+  - first:
+      4: 400116
+    second: forearm_twist_mid.L
+  - first:
+      4: 400118
+    second: forearm_twist_mid.R
+  - first:
+      4: 400120
+    second: forearm_twist_wrist.L
+  - first:
+      4: 400122
+    second: forearm_twist_wrist.L_end
+  - first:
+      4: 400124
+    second: forearm_twist_wrist.R
+  - first:
+      4: 400126
+    second: forearm_twist_wrist.R_end
+  - first:
+      4: 400128
+    second: //RootNode
+  - first:
+      4: 400130
+    second: G17
+  - first:
+      4: 400132
+    second: G17_mag
+  - first:
+      4: 400134
+    second: hand_index_base.L
+  - first:
+      4: 400136
+    second: hand_index_base.R
+  - first:
+      4: 400138
+    second: hand_middle_base.L
+  - first:
+      4: 400140
+    second: hand_middle_base.R
+  - first:
+      4: 400142
+    second: hand_pinky_base.L
+  - first:
+      4: 400144
+    second: hand_pinky_base.R
+  - first:
+      4: 400146
+    second: hand_ring_base.L
+  - first:
+      4: 400148
+    second: hand_ring_base.R
+  - first:
+      4: 400150
+    second: mag
+  - first:
+      4: 400152
+    second: mag_end
+  - first:
+      4: 400154
+    second: main
+  - first:
+      4: 400156
+    second: rig
+  - first:
+      4: 400158
+    second: shape_wrist_twist_down.L
+  - first:
+      4: 400160
+    second: shape_wrist_twist_down.L_end
+  - first:
+      4: 400162
+    second: shape_wrist_twist_down.R
+  - first:
+      4: 400164
+    second: shape_wrist_twist_down.R_end
+  - first:
+      4: 400166
+    second: shape_wrist_twist_in.L
+  - first:
+      4: 400168
+    second: shape_wrist_twist_in.L_end
+  - first:
+      4: 400170
+    second: shape_wrist_twist_in.R
+  - first:
+      4: 400172
+    second: shape_wrist_twist_in.R_end
+  - first:
+      4: 400174
+    second: shape_wrist_twist_out.L
+  - first:
+      4: 400176
+    second: shape_wrist_twist_out.L_end
+  - first:
+      4: 400178
+    second: shape_wrist_twist_out.R
+  - first:
+      4: 400180
+    second: shape_wrist_twist_out.R_end
+  - first:
+      4: 400182
+    second: shape_wrist_twist_up.L
+  - first:
+      4: 400184
+    second: shape_wrist_twist_up.L_end
+  - first:
+      4: 400186
+    second: shape_wrist_twist_up.R
+  - first:
+      4: 400188
+    second: shape_wrist_twist_up.R_end
+  - first:
+      4: 400190
+    second: shoulder_ctrl.L
+  - first:
+      4: 400192
+    second: shoulder_ctrl.R
+  - first:
+      4: 400194
+    second: slide
+  - first:
+      4: 400196
+    second: slide_end
+  - first:
+      4: 400198
+    second: trigger
+  - first:
+      4: 400200
+    second: trigger_end
+  - first:
+      4: 400202
+    second: upperarm.L
+  - first:
+      4: 400204
+    second: upperarm.R
+  - first:
+      43: 4300000
+    second: bullet_9mm
+  - first:
+      43: 4300002
+    second: bullet_9mm_empty
+  - first:
+      43: 4300004
+    second: G17
+  - first:
+      43: 4300006
+    second: G17_mag
+  - first:
+      43: 4300008
+    second: arms
+  - first:
+      43: 4300010
+    second: arms_full
+  - first:
+      74: 7400000
+    second: rig|ADS_off
+  - first:
+      74: 7400002
+    second: rig|ADS_on
+  - first:
+      74: 7400004
+    second: rig|attack
+  - first:
+      74: 7400006
+    second: rig|attack_fail
+  - first:
+      74: 7400008
+    second: rig|draw
+  - first:
+      74: 7400010
+    second: rig|draw_slide
+  - first:
+      74: 7400012
+    second: rig|hide
+  - first:
+      74: 7400014
+    second: rig|idle
+  - first:
+      74: 7400016
+    second: rig|crawl
+  - first:
+      74: 7400018
+    second: rig|idle_move1
+  - first:
+      74: 7400020
+    second: rig|inspect
+  - first:
+      74: 7400022
+    second: rig|ref_ads
+  - first:
+      74: 7400024
+    second: rig|ref_empty
+  - first:
+      74: 7400026
+    second: rig|ref_idle
+  - first:
+      74: 7400028
+    second: rig|reload
+  - first:
+      74: 7400030
+    second: rig|reload_tactical
+  - first:
+      74: 7400032
+    second: rig|run
+  - first:
+      74: 7400034
+    second: rig|walk
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: arms
+  - first:
+      137: 13700002
+    second: arms_full
+  - first:
+      137: 13700004
+    second: bullet_9mm
+  - first:
+      137: 13700006
+    second: bullet_9mm_empty
+  - first:
+      137: 13700008
+    second: G17
+  - first:
+      137: 13700010
+    second: G17_mag
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: rig|ADS_off
       takeName: rig|ADS_off
+      internalID: 0
       firstFrame: 1
       lastFrame: 15
       wrapMode: 0
@@ -272,6 +757,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -494,9 +980,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|ADS_on
       takeName: rig|ADS_on
+      internalID: 0
       firstFrame: 1
       lastFrame: 15
       wrapMode: 0
@@ -504,6 +992,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -726,9 +1215,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|attack
       takeName: rig|attack
+      internalID: 0
       firstFrame: 1
       lastFrame: 12
       wrapMode: 0
@@ -736,6 +1227,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -958,9 +1450,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|attack_fail
       takeName: rig|attack_fail
+      internalID: 0
       firstFrame: 1
       lastFrame: 6
       wrapMode: 0
@@ -968,6 +1462,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1190,9 +1685,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|draw
       takeName: rig|draw
+      internalID: 0
       firstFrame: 1
       lastFrame: 35
       wrapMode: 0
@@ -1200,6 +1697,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1422,9 +1920,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|draw_slide
       takeName: rig|draw_slide
+      internalID: 0
       firstFrame: 1
       lastFrame: 62
       wrapMode: 0
@@ -1432,6 +1932,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1654,9 +2155,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|hide
       takeName: rig|hide
+      internalID: 0
       firstFrame: 1
       lastFrame: 19
       wrapMode: 0
@@ -1664,6 +2167,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1886,9 +2390,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|idle
       takeName: rig|idle
+      internalID: 0
       firstFrame: 1
       lastFrame: 240
       wrapMode: 0
@@ -1896,6 +2402,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2118,9 +2625,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|crawl
       takeName: rig|crawl
+      internalID: 0
       firstFrame: 1
       lastFrame: 32
       wrapMode: 0
@@ -2128,6 +2637,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2350,9 +2860,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|idle_move1
       takeName: rig|idle_move1
+      internalID: 0
       firstFrame: 1
       lastFrame: 70
       wrapMode: 0
@@ -2360,7 +2872,8 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -2582,9 +3095,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|inspect
       takeName: rig|inspect
+      internalID: 0
       firstFrame: 1
       lastFrame: 281
       wrapMode: 0
@@ -2592,6 +3107,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2814,9 +3330,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|ref_ads
       takeName: rig|ref_ads
+      internalID: 0
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -2824,6 +3342,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -3046,9 +3565,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|ref_empty
       takeName: rig|ref_empty
+      internalID: 0
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -3056,6 +3577,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -3278,9 +3800,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|ref_idle
       takeName: rig|ref_idle
+      internalID: 0
       firstFrame: 0
       lastFrame: 1
       wrapMode: 0
@@ -3288,6 +3812,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -3510,9 +4035,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|reload
       takeName: rig|reload
+      internalID: 0
       firstFrame: 1
       lastFrame: 90
       wrapMode: 0
@@ -3520,6 +4047,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -3742,9 +4270,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|reload_tactical
       takeName: rig|reload_tactical
+      internalID: 0
       firstFrame: 1
       lastFrame: 74
       wrapMode: 0
@@ -3752,6 +4282,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -3974,9 +4505,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|run
       takeName: rig|run
+      internalID: 0
       firstFrame: 1
       lastFrame: 24
       wrapMode: 0
@@ -3984,6 +4517,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -4206,9 +4740,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: rig|walk
       takeName: rig|walk
+      internalID: 0
       firstFrame: 1
       lastFrame: 28
       wrapMode: 0
@@ -4216,6 +4752,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -4438,19 +4975,30 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -4458,24 +5006,35 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
