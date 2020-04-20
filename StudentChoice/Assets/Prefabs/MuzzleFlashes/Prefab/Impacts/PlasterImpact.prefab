@@ -58,7 +58,6 @@ GameObject:
   - component: {fileID: 478036}
   - component: {fileID: 19878040}
   - component: {fileID: 19978040}
-  - component: {fileID: 114172728608317622}
   m_Layer: 0
   m_Name: DustVertical
   m_TagString: Untagged
@@ -1526,7 +1525,7 @@ ParticleSystem:
     sprites:
     - sprite: {fileID: 0}
     flipU: 0
-    flipV: 0.5
+    flipV: 0
   VelocityModule:
     enabled: 0
     x:
@@ -4769,7 +4768,7 @@ ParticleSystemRenderer:
   m_ShadowBias: 0
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
-  m_Flip: {x: 0, y: 0, z: 0}
+  m_Flip: {x: 0, y: 0.5, z: 0}
   m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
@@ -4780,18 +4779,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &114172728608317622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 392ba55a1727b624eac5499eaf0effd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &178036
 GameObject:
   m_ObjectHideFlags: 0
@@ -9473,10 +9460,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 478034}
-  - component: {fileID: 11478044}
   - component: {fileID: 33998775361866648}
   - component: {fileID: 23659258232878848}
-  - component: {fileID: 114952998280028386}
   m_Layer: 0
   m_Name: Decal
   m_TagString: Untagged
@@ -9498,51 +9483,6 @@ Transform:
   m_Father: {fileID: 478040}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 90}
---- !u!114 &11478044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f6f8e03260dedb45a05a2c5f5eea632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShaderColorProperty: 0
-  Color:
-    serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 47417
-    atime2: 65535
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 3
-  TimeMultiplier: 20
-  IsLoop: 0
-  canUpdate: 0
 --- !u!33 &33998775361866648
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9590,20 +9530,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &114952998280028386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22b81bf1b22fe3e44ab916ed01617439, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScreenSpaceDecals: 1
-  randomScalePercent: 50
 --- !u!1 &178044
 GameObject:
   m_ObjectHideFlags: 0
@@ -11081,7 +11007,7 @@ ParticleSystem:
     sprites:
     - sprite: {fileID: 0}
     flipU: 0
-    flipV: 0.5
+    flipV: 0
   VelocityModule:
     enabled: 0
     x:
@@ -14324,7 +14250,7 @@ ParticleSystemRenderer:
   m_ShadowBias: 0
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
-  m_Flip: {x: 0, y: 0, z: 0}
+  m_Flip: {x: 0, y: 0.5, z: 0}
   m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0

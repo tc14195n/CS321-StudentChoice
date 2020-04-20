@@ -20,7 +20,7 @@ public class ZombieRagdoll : MonoBehaviour
      * Element 10: KneeR
      */
 
-    public void Dismember(bool[] bodyparts)
+    public void Dismember(bool[] bodyparts) //remove the limbs that are missing on the zombie (used for the ragdoll)
     {
         for(int i = 0; i < bodyparts.Length; i++)
         {

@@ -10,13 +10,15 @@ public class ZombieHealthController : MonoBehaviour
     public GameObject ragdoll;
     public bool[] dismemberedLimbs;
     private ZombieAIController zomAI;
-    public bool gotShoot = false;
+    public bool gotShot = false;
+    public bool legShot = false;
 
     private void Start()
     {
         zomAI = GetComponent<ZombieAIController>();
     }
-    public void Damage(float damage, float multiplier) //no dismemberment
+
+    public void Damage(float damage, float multiplier) //no dismemberment ignore (just for backup)
     {
         health -= damage * multiplier; //apply damage + multiplier
 
@@ -28,7 +30,7 @@ public class ZombieHealthController : MonoBehaviour
 
     public void Damage(float damage, float multiplier, string bodyPart) //head and body 
     {
-        if(head.name.CompareTo(bodyPart) == 0)
+        if(bodyPart.CompareTo("Head") == 0)
         {
             LimbHealth headhit = head.GetComponent<LimbHealth>(); //get the head's health component
             headhit.limbhealth -= damage * multiplier; //apply damage to head
@@ -41,12 +43,11 @@ public class ZombieHealthController : MonoBehaviour
                 Destroy(head); //destroy head if health is less than zero
             }
         }
-        else if (body.name.CompareTo(bodyPart) == 0)
+        else if (bodyPart.CompareTo("Body") == 0)
         {
             health -= damage * multiplier; // apply damage to zombie
-            gotShoot = true;
+            gotShot = true; // used to make the zombie flinch in the zombieAIController script
         }
-        health -= damage * multiplier; //apply damage + multiplier
 
         if (health <= 0) //death
         {
@@ -74,7 +75,8 @@ public class ZombieHealthController : MonoBehaviour
                     limbhit.DismemberLimb(limbs[i]);
                     if(i >= 6)
                     {
-                        zomAI.zombieState = ZombieAIController.ZombieState.crawling;
+                        legShot = true; // used to make the zombie crawl in the zombieAIController script
+                        //zomAI.zombieState = ZombieAIController.ZombieState.crawling; // make the zombie crawl when missing a leg (all leg parts are <=6 in the index)
                     }
                     Destroy(limbs[i]); //destroy limb if health is less than zero
 
@@ -90,11 +92,11 @@ public class ZombieHealthController : MonoBehaviour
 
     private void Die()
     {
-        //TODO: add replacement ragdoll that matches missing body parts
-        Transform zombiePosition = transform;
-        
-        ragdoll = Instantiate(ragdoll, zombiePosition.position, zombiePosition.rotation);
-        ragdoll.GetComponent<ZombieRagdoll>().Dismember(dismemberedLimbs);
-        Destroy(gameObject);
+        //TODO: add death noise
+        //Suggestion: add blood puddle
+        Transform zombiePosition = transform; //get the zombies position     
+        ragdoll = Instantiate(ragdoll, zombiePosition.position, zombiePosition.rotation); //spawn ragdoll at the zombies position
+        ragdoll.GetComponent<ZombieRagdoll>().Dismember(dismemberedLimbs); // remove the ragdolls limbs to match the dead zombie
+        Destroy(gameObject); //destroy the zombie (not the ragdoll)
     }
 }

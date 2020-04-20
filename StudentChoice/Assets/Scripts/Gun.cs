@@ -13,10 +13,9 @@ public class Gun : MonoBehaviour
 
     public int magSize = 30;
     public float reloadspeed = 1;
-    private int ammoLeftInMag;
+    public int ammoLeftInMag;
     private bool isReloading;
     public Animator animator;
-    public Text ammoInMag;
 
 
     public Transform muzzle;
@@ -31,7 +30,6 @@ public class Gun : MonoBehaviour
     void Start()
     {
         ammoLeftInMag = magSize;
-        ammoInMag.text = ammoLeftInMag + " / ";
     }
 
     // Update is called once per frame
@@ -60,7 +58,6 @@ public class Gun : MonoBehaviour
         animator.SetBool("Reloading", true);
         yield return new WaitForSeconds(reloadspeed);
         ammoLeftInMag = magSize;
-        ammoInMag.text = ammoLeftInMag + " / ";
         animator.SetBool("Reloading", false);
         isReloading = false;
     }
@@ -68,7 +65,6 @@ public class Gun : MonoBehaviour
     private void shoot()
     {
         ammoLeftInMag--;
-        ammoInMag.text = ammoLeftInMag + " / ";
         Instantiate(muzzleFlash, muzzle);
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
@@ -80,14 +76,14 @@ public class Gun : MonoBehaviour
             if (hit.transform.tag.CompareTo("Head") == 0)
             {
                 zombie = hit.transform.GetComponentInParent<ZombieHealthController>();
-                zombie.Damage(damage, headDamageMultiplier, hit.transform.name);
+                zombie.Damage(damage, headDamageMultiplier, "Head");
                 Instantiate(enemyimpactFX, hit.point, Quaternion.LookRotation(hit.normal));
             }
 
             else if (hit.transform.tag.CompareTo("Body") == 0)
             {
                 zombie = hit.transform.GetComponentInParent<ZombieHealthController>();
-                zombie.Damage(damage, bodyDamageMultiplier, hit.transform.name);
+                zombie.Damage(damage, bodyDamageMultiplier, "Body");
                 Instantiate(enemyimpactFX, hit.point, Quaternion.LookRotation(hit.normal));
                 // Debug.Log(zombie.health);
             }
