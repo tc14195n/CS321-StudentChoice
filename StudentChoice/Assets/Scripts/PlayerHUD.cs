@@ -10,6 +10,7 @@ public class PlayerHUD : MonoBehaviour
     public Image crosshair;
     public Text ammoMag;
     public Text ammoReserve;
+    public Text firemode;
 
     private PlayerInventory inv;
     private PlayerHealthController pHC;
@@ -35,5 +36,6 @@ public class PlayerHUD : MonoBehaviour
         }
         ammoMag.text = inv.loadout.currentWeapon.getAmmoCount().ToString() + " /";
         crosshair.enabled = !inv.loadout.currentWeapon.ADSing();
+        firemode.text = inv.loadout.currentWeapon.getFiremode();
     }
 }

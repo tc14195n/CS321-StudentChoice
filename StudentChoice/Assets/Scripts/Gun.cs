@@ -39,7 +39,6 @@ public class Gun : MonoBehaviour
     void Start()
     {
         ammoLeftInMag = magSize;
-        transform.localPosition = gunPos;
     }
 
     // Update is called once per frame
@@ -61,14 +60,12 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             isAiming = true;
-            transform.localPosition = Vector3.Slerp(aimPos, gunPos, adsSpeed * Time.deltaTime);
-            //animator.SetBool("ADS", true);
+             transform.localPosition = Vector3.Lerp(aimPos, gunPos, Time.timeScale / adsSpeed * Time.deltaTime);
         }
         else if (Input.GetButtonUp("Fire2"))
         {
             isAiming = false;
-            transform.localPosition = Vector3.Slerp(gunPos, aimPos, adsSpeed * Time.deltaTime);
-            // animator.SetBool("ADS", false);
+            transform.localPosition = Vector3.Lerp(gunPos, aimPos, Time.timeScale / adsSpeed * Time.deltaTime);
         }
 
         if (playerMove.isMoving && !isShooting)
@@ -225,7 +222,7 @@ public class Gun : MonoBehaviour
                 if (i == 0) // this if statement disable the colliders on the missing limbs 
                 {                   
                     limbCollider = hit.transform.GetComponent<Collider>(); 
-                    if (hit.transform.GetChild(0) != null)
+                    if (hit.transform.GetChild(0).GetComponent<Collider>() != null)
                     {
                         hit.transform.GetChild(0).GetComponent<Collider>().enabled = false;
 
@@ -301,5 +298,9 @@ public class Gun : MonoBehaviour
     public bool ADSing()
     {
         return isAiming;
+    }
+    public String getFiremode()
+    {
+        return SelectFire.ToString();
     }
 }
