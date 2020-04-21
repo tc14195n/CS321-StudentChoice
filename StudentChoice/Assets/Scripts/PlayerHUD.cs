@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class PlayerHUD : MonoBehaviour
 {
     
-    public Image healthSlider;
-    public Text ammoLabel;
-    public Text ammoLabel2;
+    public Image healthSlider, healthSlider2;
+    public Image crosshair;
+    public Text ammoMag;
+    public Text ammoReserve;
 
     private PlayerInventory inv;
     private PlayerHealthController pHC;
@@ -25,11 +26,14 @@ public class PlayerHUD : MonoBehaviour
     void Update()
     {
 
-        healthSlider.fillAmount = pHC.health / 100;
+        healthSlider.fillAmount = (pHC.health / 100) / 2;
+        healthSlider2.fillAmount = (pHC.health / 100) / 2;
         if (pHC.health <= 30)
         {
             healthSlider.color = Color.Lerp(Color.red, Color.white, Mathf.PingPong(Time.time, 1));
+            healthSlider2.color = Color.Lerp(Color.red, Color.white, Mathf.PingPong(Time.time, 1));
         }
-        ammoLabel.text = inv.loadout.currentWeapon.getAmmoCount().ToString() + " /";
+        ammoMag.text = inv.loadout.currentWeapon.getAmmoCount().ToString() + " /";
+        crosshair.enabled = !inv.loadout.currentWeapon.ADSing();
     }
 }

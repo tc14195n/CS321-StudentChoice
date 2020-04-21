@@ -31,7 +31,7 @@ public class Gun : MonoBehaviour
     [SerializeField] GameObject muzzleFlash = null;
     [SerializeField] GameObject[] impactFX = new GameObject[11] ;
 
-    private bool isReloading, isShooting, firedShotAnim, doneshootingAnim;
+    private bool isReloading, isShooting, isAiming = false;
     private float shootCooldown;
     private Collider limbCollider;
 
@@ -60,11 +60,13 @@ public class Gun : MonoBehaviour
 
         if (Input.GetButtonDown("Fire2"))
         {
+            isAiming = true;
             transform.localPosition = Vector3.Slerp(aimPos, gunPos, adsSpeed * Time.deltaTime);
             //animator.SetBool("ADS", true);
         }
         else if (Input.GetButtonUp("Fire2"))
-        {           
+        {
+            isAiming = false;
             transform.localPosition = Vector3.Slerp(gunPos, aimPos, adsSpeed * Time.deltaTime);
             // animator.SetBool("ADS", false);
         }
@@ -295,5 +297,9 @@ public class Gun : MonoBehaviour
     public int getAmmoCount()
     {
         return ammoLeftInMag;
+    }
+    public bool ADSing()
+    {
+        return isAiming;
     }
 }
