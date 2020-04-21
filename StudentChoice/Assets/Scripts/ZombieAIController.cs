@@ -13,8 +13,8 @@ public class ZombieAIController : MonoBehaviour
     public float stopDistance;
     private float distance;
     private Animator animator;
-    public bool isRunner;
-    public float walkSpeed, runSpeed, crawlSpeed, ZombieAttackDamage;
+    public bool isRunner, playerSeeker;
+    public float walkSpeed, runSpeed, crawlSpeed, ZombieAttackDamage, maxChaseDistance;
     ZombieHealthController zomhealth;
 
     public enum ZombieState{
@@ -52,6 +52,20 @@ public class ZombieAIController : MonoBehaviour
             case ZombieState.idle:
                 animator.SetBool("Idle", true);
 
+                if (playerSeeker) //Make the zombie chase the player no matter where he is at
+                {
+                    animator.SetBool("Idle", false);
+
+                    if (isRunner) //decide to run or walk towards the player //Suggestion: If the zombie is a walker but too far from the player it can turn into a runner to catch up than at a safe distance walk again
+                    {
+                        zombieState = ZombieState.running;
+                    }
+                    else
+                    {
+                        zombieState = ZombieState.walking;
+                    }                   
+                }
+
                 if (zomhealth.gotShot) // check if zombie was shot in the chest to make him flinch
                 {
                     animator.SetBool("Idle", false);
@@ -81,7 +95,13 @@ public class ZombieAIController : MonoBehaviour
 
             case ZombieState.walking:
                 animator.SetBool("Walking", true);
-                
+
+                if (distance >= maxChaseDistance && !playerSeeker) // Stop chasing the player if he has escaped and the zombie is not set to chase the player
+                {
+                    animator.SetBool("Walking", false);
+                    zombieState = ZombieState.idle;
+                }
+
                 if (zomhealth.gotShot) // check if zombie was shot in the chest to make him flinch
                 {
                     animator.SetBool("Walking", false);
@@ -103,7 +123,13 @@ public class ZombieAIController : MonoBehaviour
                 break;
 
             case ZombieState.running:
-                animator.SetBool("Running", true); 
+                animator.SetBool("Running", true);
+
+                if (distance >= maxChaseDistance && !playerSeeker) // Stop chasing the player if he has escaped and the zombie is not set to chase the player
+                {
+                    animator.SetBool("Running", false);
+                    zombieState = ZombieState.idle;
+                }
 
                 if (zomhealth.gotShot) // check if zombie was shot in the chest to make him flinch
                 {
@@ -131,10 +157,15 @@ public class ZombieAIController : MonoBehaviour
                 animator.SetBool("Crawling", true);
                 animator.SetBool("Runner", false);
 
+                if (distance >= maxChaseDistance && !playerSeeker) // Stop chasing the player if he has escaped and the zombie is not set to chase the player
+                {
+                    nav.SetDestination(transform.position); //stop the crawler instead of going into idle animation to avoid floating zombies
+                }
+
                 if (distance <= stopDistance) // check if player is in attack radius then attack
                 {
 
-                    //TODO: add player stun
+                    //Suggestion: add player stun
                     nav.SetDestination(transform.position);
                     zombieState = ZombieState.crawlAttack;
                 }
