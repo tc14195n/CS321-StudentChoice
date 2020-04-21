@@ -80,19 +80,34 @@ public class Gun : MonoBehaviour
         switch (SelectFire)
         {
             case FireMode.SemiAuto:
-                if (Input.GetButtonDown("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
+                if (Input.GetKeyDown(KeyCode.B))
+                {
+                    SelectFire = FireMode.FullAuto;
+                }
+
+                else if (Input.GetButtonDown("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
                 {
                     StartCoroutine(ShootSemiAuto());
                 }
                 break;
             case FireMode.FullAuto:
-                if (Input.GetButton("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
+                if (Input.GetKeyDown(KeyCode.B))
+                {
+                    SelectFire = FireMode.BurstFire;
+                }
+
+                else if (Input.GetButton("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
                 {
                     StartCoroutine(ShootFullAuto(RPM));
                 }
                 break;
             case FireMode.BurstFire:
-                if (Input.GetButton("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
+                if (Input.GetKeyDown(KeyCode.B))
+                {
+                    SelectFire = FireMode.SemiAuto;
+                }
+
+                else if (Input.GetButton("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
                 {
                     StartCoroutine(ShootBurst(RPM));
                 }
