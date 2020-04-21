@@ -13,11 +13,12 @@ public class Gun : MonoBehaviour
     [SerializeField] Vector3 gunPos = new Vector3(0.03f, -0.12f, 0.03f);
     [SerializeField] Vector3 aimPos = new Vector3(-0.0665f, -0.07f, -0.09f);
 
-    private enum FireMode { SemiAuto, FullAuto, BurstFire}
-    [SerializeField]  FireMode SelectFire = FireMode.SemiAuto;
+
 
     [SerializeField] float damage = 10;
     [SerializeField] float RPM = 100;
+    private enum FireMode { SemiAuto, FullAuto, BurstFire }
+    [SerializeField] FireMode SelectFire = FireMode.SemiAuto;
     [SerializeField] float impactForce = 100;
     [SerializeField] float limbsDamageMultiplier = 0.75f, bodyDamageMultiplier = 1f, headDamageMultiplier = 5f;
 

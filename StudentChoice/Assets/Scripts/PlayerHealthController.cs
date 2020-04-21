@@ -30,5 +30,6 @@ public class PlayerHealthController : MonoBehaviour
     {
         //can spawn a ragdoll of player and a camera to see the player's body fall and maybe have zombies bite the body
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameManager.hasWon = false;
     }
 }
