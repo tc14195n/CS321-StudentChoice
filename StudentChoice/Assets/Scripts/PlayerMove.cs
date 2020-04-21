@@ -6,16 +6,9 @@ public class PlayerMove : MonoBehaviour
 {
     float x, z;
     private CharacterController cC;
-    public float moveSpeed, jump;
-    public float gravity = -9.81f;
+    public float moveSpeed;
     public bool isMoving;
 
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
-
-    Vector3 velocity;
-    bool isGrounded;
     
     // Start is called before the first frame update
     void Start()
@@ -27,25 +20,15 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         isMoving = false;
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
-        if(isGrounded && velocity.y < 0)
-        {
-            velocity.y = -1f;
-        }
 
         x = Input.GetAxis("Horizontal");
-        z = Input.GetAxis("Vertical");       
+        z = Input.GetAxis("Vertical");  
+        
         if(x != 0 || z !=0 )
         {
-            isMoving = true;
+            isMoving = true; //used for gun animations
         }
+
         cC.Move((transform.right * x + transform.forward *z) * moveSpeed * Time.deltaTime);
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            velocity.y = Mathf.Sqrt(jump * -2 * gravity);
-        }
-        velocity.y += gravity * Time.deltaTime;
-        cC.Move(velocity * Time.deltaTime);
     }
 }
