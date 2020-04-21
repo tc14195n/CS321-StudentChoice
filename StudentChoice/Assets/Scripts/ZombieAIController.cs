@@ -52,6 +52,12 @@ public class ZombieAIController : MonoBehaviour
             case ZombieState.idle:
                 animator.SetBool("Idle", true);
 
+                if (zomhealth.gotShot) // check if zombie was shot in the chest to make him flinch
+                {
+                    animator.SetBool("Idle", false);
+                    zombieState = ZombieState.flinch;
+                }  
+
                 if (zomhealth.legShot) // check if zombie was shot in the leg to make him crawl
                 {
                     animator.SetBool("Idle", false);
