@@ -163,8 +163,6 @@ public class Gun : MonoBehaviour
        
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
         {
-            //    Debug.Log(hit.transform.tag);
-            //    Debug.Log(hit.transform.name);
             ZombieHealthController zombie;
 
             if (hit.transform.tag.CompareTo("Head") == 0)
@@ -185,26 +183,22 @@ public class Gun : MonoBehaviour
             else if (hit.transform.tag.CompareTo("Limbs") == 0)
             {
                 zombie = hit.transform.GetComponentInParent<ZombieHealthController>();
-                int i = zombie.DamageLimbs(damage, limbsDamageMultiplier, hit.transform.name);
-                if (i == 0)
-                {
-                    limbCollider = hit.transform.GetComponent<Collider>();
-                    limbCollider.enabled = false;
+                int i = zombie.DamageLimbs(damage, limbsDamageMultiplier, hit.transform.name); //returns 0 if a limb was detroyed
 
-                    i = 1;
-                    int c = 0;
-                    while (i != 0 || c != 5)
+                if (i == 0) // this if statement disable the colliders on the missing limbs 
+                {                   
+                    limbCollider = hit.transform.GetComponent<Collider>(); 
+                    if (hit.transform.GetChild(0) != null)
                     {
-                        
-                        if (limbCollider.GetComponentInChildren<Collider>() != null)
+                        hit.transform.GetChild(0).GetComponent<Collider>().enabled = false;
+
+                        if (hit.transform.GetChild(0).GetChild(0).GetComponent<Collider>() != null)
                         {
-                            limbCollider = limbCollider.GetComponentInChildren<Collider>();
-                            limbCollider.enabled = false;
-                            i = limbCollider.gameObject.GetComponentInChildren<Transform>().childCount;
-                        }                        
-                        c++;
-                       
+                            hit.transform.GetChild(0).GetChild(0).GetComponent<Collider>().enabled = false; 
+                        }
                     }
+
+                    limbCollider.enabled = false;
                 }
                 Instantiate(impactFX[0], hit.point, Quaternion.LookRotation(hit.normal));
                 // Debug.Log(zombie.health);
