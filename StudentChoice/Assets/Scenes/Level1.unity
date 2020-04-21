@@ -1160,7 +1160,7 @@ PrefabInstance:
     - target: {fileID: 7506701731598291484, guid: 8b25642621f69464084f11233677cf84,
         type: 3}
       propertyPath: SelectFire
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7506701731598291484, guid: 8b25642621f69464084f11233677cf84,
         type: 3}

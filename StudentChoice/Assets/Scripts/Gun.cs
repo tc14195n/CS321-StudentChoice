@@ -146,17 +146,37 @@ public class Gun : MonoBehaviour
 
     IEnumerator ShootBurst(float RPM)
     {
+        float time = (RPM / 60000) / 3; // convert to MS then divide by 3 for burst
         isShooting = true;
         shoot();
-        animator.SetBool("Shot", true);
-        float time = (RPM / 60000); // convert to MS
+        animator.SetBool("Shot", true);       
         yield return new WaitForSeconds(time);
         isShooting = false;
         animator.SetBool("Shot", false);
+
+        isShooting = true;
+        shoot();
+        animator.SetBool("Shot", true);
+        yield return new WaitForSeconds(time);
+        isShooting = false;
+        animator.SetBool("Shot", false);
+
+        isShooting = true;
+        shoot();
+        animator.SetBool("Shot", true);
+        yield return new WaitForSeconds(time + 0.5f); //burst delay
+        isShooting = false;
+        animator.SetBool("Shot", false);
+        
+
     }
 
     private void shoot()
     {
+        if (getAmmoCount() <= 0)
+            return;
+
+
         ammoLeftInMag--;
         Instantiate(muzzleFlash, muzzle);
         RaycastHit hit;
