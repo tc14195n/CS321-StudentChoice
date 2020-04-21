@@ -62,7 +62,7 @@ public class Gun : MonoBehaviour
             isAiming = true;
              transform.localPosition = Vector3.Lerp(aimPos, gunPos, Time.timeScale / adsSpeed * Time.deltaTime);
         }
-        else if (Input.GetButtonUp("Fire2"))
+        if (Input.GetButtonUp("Fire2"))
         {
             isAiming = false;
             transform.localPosition = Vector3.Lerp(gunPos, aimPos, Time.timeScale / adsSpeed * Time.deltaTime);
