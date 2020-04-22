@@ -16,6 +16,7 @@ public class ZombieAIController : MonoBehaviour
     public bool isRunner, playerSeeker;
     public float walkSpeed, runSpeed, crawlSpeed, ZombieAttackDamage, maxChaseDistance;
     ZombieHealthController zomhealth;
+    public bool isStunning = false;
 
     public enum ZombieState{
         idle, 
@@ -43,13 +44,14 @@ public class ZombieAIController : MonoBehaviour
 
         //StartCoroutine(Zombie());
     }
-    private void Update()
+    private void FixedUpdate()
     {
         distance = Vector3.Distance(target.position, transform.position); // distance from player
 
         switch (zombieState)
         {
             case ZombieState.idle:
+                //TODO: ADD IDLE SOUND HERE
                 animator.SetBool("Idle", true);
 
                 if (playerSeeker) //Make the zombie chase the player no matter where he is at
@@ -95,6 +97,7 @@ public class ZombieAIController : MonoBehaviour
 
             case ZombieState.walking:
                 animator.SetBool("Walking", true);
+                //TODO: ADD WALKING SOUND HERE
 
                 if (distance >= maxChaseDistance && !playerSeeker) // Stop chasing the player if he has escaped and the zombie is not set to chase the player
                 {
@@ -124,6 +127,7 @@ public class ZombieAIController : MonoBehaviour
 
             case ZombieState.running:
                 animator.SetBool("Running", true);
+                //TODO: ADD RUNNING SOUND HERE
 
                 if (distance >= maxChaseDistance && !playerSeeker) // Stop chasing the player if he has escaped and the zombie is not set to chase the player
                 {
@@ -156,13 +160,14 @@ public class ZombieAIController : MonoBehaviour
             case ZombieState.crawling:              
                 animator.SetBool("Crawling", true);
                 animator.SetBool("Runner", false);
+                //TODO: ADD CRAWLING SOUND HERE
 
                 if (distance >= maxChaseDistance && !playerSeeker) // Stop chasing the player if he has escaped and the zombie is not set to chase the player
                 {
                     nav.SetDestination(transform.position); //stop the crawler instead of going into idle animation to avoid floating zombies
                 }
 
-                if (distance <= stopDistance) // check if player is in attack radius then attack
+                if (distance <= stopDistance - 0.5) // check if player is in attack radius then attack
                 {
 
                     //Suggestion: add player stun
@@ -176,6 +181,7 @@ public class ZombieAIController : MonoBehaviour
 
             case ZombieState.attacking:               
                 animator.SetBool("Attacking", true);
+                //TODO: ADD ATTACK SOUND HERE
 
                 Vector3 targetPos = new Vector3(target.position.x, transform.position.y, target.position.z); // used to make sure the zombie...
                 transform.LookAt(targetPos);                                                                // looks at the player when attacking
@@ -204,8 +210,7 @@ public class ZombieAIController : MonoBehaviour
             case ZombieState.flinch:
                 nav.SetDestination(transform.position); //dont move                     
                 animator.SetBool("Flinch", true);
-
-                StartCoroutine(wait());
+                //TODO: ADD FLINCH SOUND HERE
 
                 if (isRunner) //start running again if zombie is a runner else, walk again
                 {
@@ -225,9 +230,17 @@ public class ZombieAIController : MonoBehaviour
                 targetPos = new Vector3(target.position.x, transform.position.y, target.position.z); // used to make sure the zombie...
                 transform.LookAt(targetPos);                                                                // looks at the player when attacking
 
+                if (!phc.gameObject.GetComponent<PlayerMove>().isStunned)
+                {
+                    phc.gameObject.GetComponent<PlayerMove>().isStunned = true;
+                    isStunning = true;
+                   // StartCoroutine(stun());
+                }
+
                 if (distance > stopDistance + 1) // start crawling if zombie isnt in attack radius
                 {
                     animator.SetBool("Attacking", false);
+                    phc.gameObject.GetComponent<PlayerMove>().isStunned = false;
                     zombieState = ZombieState.crawling;
                 }
 
@@ -256,13 +269,17 @@ public class ZombieAIController : MonoBehaviour
         zomhealth.gotShot = false; // stop flinching
         animator.SetBool("Flinch", false);
     }
-  /*  IEnumerator stun()
+
+    IEnumerator stun()
     {
-        //TODO: stop player from moving
-        yield return new WaitForSeconds(5f);
-        
+        phc.gameObject.GetComponent<PlayerMove>().isStunned = true;
+        isStunning = true;
+        yield return new WaitForSeconds(1f);
+        phc.gameObject.GetComponent<PlayerMove>().isStunned = false;
+        isStunning = false;
+        yield return new WaitForSeconds(3f);
     }
-    */
+
     public void damagePlayer()
     {
         phc.damage(ZombieAttackDamage); //animtion events call damagePlayer and damagePlayer sends the damage amount to the player health controller

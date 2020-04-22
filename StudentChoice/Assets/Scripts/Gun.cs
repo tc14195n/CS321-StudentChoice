@@ -70,11 +70,13 @@ public class Gun : MonoBehaviour
 
         if (Input.GetButtonDown("Fire2"))
         {
+            //TODO: ADD ADS SOUND HERE
             isAiming = true;
              transform.localPosition = Vector3.Lerp(aimPos, gunPos, Time.timeScale / adsSpeed * Time.deltaTime);
         }
         if (Input.GetButtonUp("Fire2"))
         {
+            //TODO: ADD unADS SOUND HERE
             isAiming = false;
             transform.localPosition = Vector3.Lerp(gunPos, aimPos, Time.timeScale / adsSpeed * Time.deltaTime);
         }
@@ -145,6 +147,7 @@ public class Gun : MonoBehaviour
         isReloading = true;
         animator.SetBool("Reloading", true);
         animator.SetBool("Walking", false);
+        //TODO: ADD RELOAD SOUND HERE
         yield return new WaitForSeconds(reloadSpeed);
         if (ammoLeftInMag > 0)
         {
@@ -213,7 +216,7 @@ public class Gun : MonoBehaviour
         if (getAmmoCount() <= 0)
             return;
 
-
+        //TODO: ADD GUNSHOT SOUND HERE
         ammoLeftInMag--;
         Instantiate(muzzleFlash, muzzle);
         RaycastHit hit;

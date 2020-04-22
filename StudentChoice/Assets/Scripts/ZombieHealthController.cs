@@ -100,6 +100,9 @@ public class ZombieHealthController : MonoBehaviour
         Transform zombiePosition = transform; //get the zombies position     
         ragdoll = Instantiate(ragdoll, zombiePosition.position, zombiePosition.rotation); //spawn ragdoll at the zombies position
         ragdoll.GetComponent<ZombieRagdoll>().Dismember(dismemberedLimbs); // remove the ragdolls limbs to match the dead zombie
+        if(zomAI.isStunning)
+        zomAI.phc.gameObject.GetComponent<PlayerMove>().isStunned = false;
+
         Destroy(gameObject); //destroy the zombie (not the ragdoll)
     }
 }

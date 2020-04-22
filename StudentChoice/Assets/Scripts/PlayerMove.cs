@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour
     float x, z;
     private CharacterController cC;
     public float moveSpeed;
-    public bool isMoving;
+    public bool isMoving, isStunned;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -28,6 +28,11 @@ public class PlayerMove : MonoBehaviour
         isMoving = false;
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
+        if (isStunned)
+        {
+            //TODO: SEND THE HUD A STUN ALERT
+        }
+
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -1f;
@@ -37,12 +42,14 @@ public class PlayerMove : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         z = Input.GetAxis("Vertical");  
         
-        if(x != 0 || z !=0 )
+        if((x != 0 || z !=0) && !isStunned)
         {
             isMoving = true; //used for gun animations
+            cC.Move((transform.right * x + transform.forward * z) * moveSpeed * Time.deltaTime);
         }
 
-        cC.Move((transform.right * x + transform.forward *z) * moveSpeed * Time.deltaTime);
+       // cC.Move((transform.right * x + transform.forward *z) * moveSpeed * Time.deltaTime);
         cC.Move(velocity * Time.deltaTime);
     }
+
 }

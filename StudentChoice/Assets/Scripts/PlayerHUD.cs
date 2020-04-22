@@ -12,9 +12,11 @@ public class PlayerHUD : MonoBehaviour
     public Text ammoMag;
     public Text ammoReserve;
     public Text firemode;
+    public Text grabbed;
 
     private PlayerInventory inv;
     private PlayerHealthController pHC;
+    private PlayerMove mov;
 
 
     // Start is called before the first frame update
@@ -22,6 +24,7 @@ public class PlayerHUD : MonoBehaviour
     {
         pHC = GetComponent<PlayerHealthController>();
         inv = GetComponent<PlayerInventory>();
+        mov = GetComponent<PlayerMove>();
 
         healthSlider.color = color;
         healthSlider2.color = color;
@@ -42,6 +45,14 @@ public class PlayerHUD : MonoBehaviour
         {
             healthSlider.color = Color.Lerp(Color.red, Color.white, Mathf.PingPong(Time.time, 1)); //fades through white and red to make the health bar show that your health is critical
             healthSlider2.color = Color.Lerp(Color.red, Color.white, Mathf.PingPong(Time.time, 1)); // This happens for both healthbars
+        }
+        if (mov.isStunned)
+        {
+            grabbed.enabled = true;
+        }
+        else
+        {
+            grabbed.enabled = false;
         }
 
         ammoMag.text = inv.loadout.currentWeapon.getAmmoCount().ToString() + " /"; //updates to screen the ammo count in the mag
