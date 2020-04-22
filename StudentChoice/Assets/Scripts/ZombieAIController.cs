@@ -211,7 +211,7 @@ public class ZombieAIController : MonoBehaviour
                 nav.SetDestination(transform.position); //dont move                     
                 animator.SetBool("Flinch", true);
                 //TODO: ADD FLINCH SOUND HERE
-
+                StartCoroutine(wait());
                 if (isRunner) //start running again if zombie is a runner else, walk again
                 {
                     animator.SetBool("Running", true);
@@ -259,11 +259,11 @@ public class ZombieAIController : MonoBehaviour
             animator.SetBool("Flinch", false);
             zombieState = ZombieState.crawling;
         }
-
         yield return new WaitForSeconds(5f); // wait flinch duration
 
         if (zomhealth.legShot) //if shot in leg crawl
         {
+            animator.SetBool("Flinch", false);
             zombieState = ZombieState.crawling;
         }
         zomhealth.gotShot = false; // stop flinching
