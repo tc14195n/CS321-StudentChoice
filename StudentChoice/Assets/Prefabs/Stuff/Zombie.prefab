@@ -3345,11 +3345,13 @@ MonoBehaviour:
   cC: {fileID: 0}
   detectionDistance: 8
   stopDistance: 2.5
-  isRunner: 1
+  isRunner: 0
+  playerSeeker: 0
   walkSpeed: 0.75
   runSpeed: 5
   crawlSpeed: 0.25
   ZombieAttackDamage: 5
+  maxChaseDistance: 36
   zombieState: 0
 --- !u!1 &149212019767824924
 GameObject:

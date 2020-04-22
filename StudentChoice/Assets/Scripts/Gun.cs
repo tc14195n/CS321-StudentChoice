@@ -6,32 +6,39 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
-    [SerializeField] Camera cam = null;
-    [SerializeField] Animator animator = null;
-    [SerializeField] PlayerMove playerMove = null;
+    private Camera cam = null;
+    private Animator animator = null;
+    private PlayerMove playerMove = null;
 
+    [Header("Position")]
     [SerializeField] Vector3 gunPos = new Vector3(0.03f, -0.12f, 0.03f);
     [SerializeField] Vector3 aimPos = new Vector3(-0.0665f, -0.07f, -0.09f);
 
 
-
+    [Header("Stats")]
     [SerializeField] float damage = 10;
     [SerializeField] float RPM = 100;
+    [SerializeField] int magSize = 30;
     private enum FireMode { SemiAuto, FullAuto, BurstFire }
     [SerializeField] FireMode SelectFire = FireMode.SemiAuto;
-    [SerializeField] float impactForce = 100;
-    [SerializeField] float limbsDamageMultiplier = 0.75f, bodyDamageMultiplier = 1f, headDamageMultiplier = 5f;
 
-    [SerializeField] int magSize = 30;
-    [SerializeField] float reloadSpeed = 1, adsSpeed = 1;
-    [SerializeField] int ammoLeftInMag;
+    [Space]
+    [SerializeField] float limbsDamageMultiplier = 0.75f;
+    [SerializeField] float bodyDamageMultiplier = 1f;
+    [SerializeField] float headDamageMultiplier = 5f;
+
+    [Space]
+    [SerializeField] float reloadSpeed = 1;
+    [SerializeField] float adsSpeed = 1;
 
 
-
+    [Header("FX")]
     [SerializeField] Transform muzzle = null;
     [SerializeField] GameObject muzzleFlash = null;
     [SerializeField] GameObject[] impactFX = new GameObject[11] ;
 
+    [SerializeField] public bool semi = true, full = false, burst = false;
+    private int ammoLeftInMag;
     private bool isReloading, isShooting, isAiming = false;
     private float shootCooldown;
     private Collider limbCollider;
@@ -39,6 +46,9 @@ public class Gun : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cam = GetComponentInParent<Camera>();
+        animator = GetComponent<Animator>();
+        playerMove = GetComponentInParent<PlayerMove>();
         ammoLeftInMag = magSize;
     }
 
@@ -80,9 +90,13 @@ public class Gun : MonoBehaviour
         switch (SelectFire)
         {
             case FireMode.SemiAuto:
-                if (Input.GetKeyDown(KeyCode.B))
+                if (Input.GetKeyDown(KeyCode.B) && full)
                 {
                     SelectFire = FireMode.FullAuto;
+                }
+                else if (Input.GetKeyDown(KeyCode.B) && burst)
+                {
+                    SelectFire = FireMode.BurstFire;
                 }
 
                 else if (Input.GetButtonDown("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
@@ -91,9 +105,13 @@ public class Gun : MonoBehaviour
                 }
                 break;
             case FireMode.FullAuto:
-                if (Input.GetKeyDown(KeyCode.B))
+                if (Input.GetKeyDown(KeyCode.B) && burst)
                 {
                     SelectFire = FireMode.BurstFire;
+                }
+                else if (Input.GetKeyDown(KeyCode.B) && semi)
+                {
+                    SelectFire = FireMode.SemiAuto;
                 }
 
                 else if (Input.GetButton("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
@@ -102,9 +120,13 @@ public class Gun : MonoBehaviour
                 }
                 break;
             case FireMode.BurstFire:
-                if (Input.GetKeyDown(KeyCode.B))
+                if (Input.GetKeyDown(KeyCode.B) && semi)
                 {
                     SelectFire = FireMode.SemiAuto;
+                }
+                else if (Input.GetKeyDown(KeyCode.B) && full)
+                {
+                    SelectFire = FireMode.FullAuto;
                 }
 
                 else if (Input.GetButton("Fire1") && ammoLeftInMag > 0 && !isShooting && !isReloading)
@@ -287,7 +309,7 @@ public class Gun : MonoBehaviour
 
             if (hit.rigidbody != null)
             {
-                hit.rigidbody.AddForce(-hit.normal * impactForce);
+                hit.rigidbody.AddForce(-hit.normal * 500);
             }                              
         }
     }

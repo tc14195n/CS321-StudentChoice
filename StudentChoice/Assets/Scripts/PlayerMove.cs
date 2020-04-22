@@ -9,7 +9,13 @@ public class PlayerMove : MonoBehaviour
     public float moveSpeed;
     public bool isMoving;
 
-    
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
+
+    Vector2 velocity;
+    bool isGrounded;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +26,13 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         isMoving = false;
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -1f;
+        }
+        velocity.y += -9.8f * Time.deltaTime;
 
         x = Input.GetAxis("Horizontal");
         z = Input.GetAxis("Vertical");  
@@ -30,5 +43,6 @@ public class PlayerMove : MonoBehaviour
         }
 
         cC.Move((transform.right * x + transform.forward *z) * moveSpeed * Time.deltaTime);
+        cC.Move(velocity * Time.deltaTime);
     }
 }
