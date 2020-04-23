@@ -219,6 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 12
   isMoving: 0
+  isStunned: 0
   groundCheck: {fileID: 3169028577164682048}
   groundDistance: 0.4
   groundMask:
@@ -269,6 +270,7 @@ MonoBehaviour:
   ammoMag: {fileID: 0}
   ammoReserve: {fileID: 0}
   firemode: {fileID: 0}
+  grabbed: {fileID: 0}
 --- !u!1 &2169682902539627416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3986,22 +3988,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef6ef0055943a14fa75ace2e31cae92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 2169682903569068369}
-  animator: {fileID: 5567325997747374799}
-  playerMove: {fileID: 2169682902054413661}
   gunPos: {x: 0.03, y: -0.12, z: 0.03}
   aimPos: {x: -0.0665, y: -0.07, z: -0.09}
   damage: 25
   RPM: 800
+  magSize: 17
   SelectFire: 0
-  impactForce: 500
   limbsDamageMultiplier: 0.75
   bodyDamageMultiplier: 1
   headDamageMultiplier: 5
-  magSize: 17
   reloadSpeed: 3
   adsSpeed: 1
-  ammoLeftInMag: 0
   muzzle: {fileID: 2169682902539627423}
   muzzleFlash: {fileID: 161002, guid: 489aba68c9dfe9342accb1f3a0be4e5b, type: 3}
   impactFX:
@@ -4016,6 +4013,9 @@ MonoBehaviour:
   - {fileID: 142740, guid: ce4fb833f44504e48b46c3474bc747fc, type: 3}
   - {fileID: 149956, guid: 3dc518bed1b2ee14481a2a155c19da18, type: 3}
   - {fileID: 138412, guid: c75e5a4fa5c842546a553399e24eb22d, type: 3}
+  semi: 1
+  full: 1
+  burst: 0
 --- !u!1 &5567325997740052801
 GameObject:
   m_ObjectHideFlags: 0
