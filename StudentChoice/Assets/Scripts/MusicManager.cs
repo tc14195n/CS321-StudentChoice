@@ -8,20 +8,21 @@ public class MusicManager : MonoBehaviour
     public static MusicManager BGM; //maybe add "battle" music
     //public static bool playing;
     public AudioClip song;
-    private AudioSource aS;
+    private AudioSource source;
     public float volume;
+    public List<AudioClip> MainMenu, Level1, Level2, Level3, EndMenu;
 
     // Start is called before the first frame update
 
     void Start() // play music but only checks when you are in the main menu
     {
-        aS = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
 
-        if (!aS.isPlaying && Counter.count != 1)
+        if (!source.isPlaying && GameData.playthrough_count != 1)
         {
-            aS.PlayOneShot(song, volume);
+            source.PlayOneShot(song, volume);
             DontDestroyOnLoad(this.gameObject);
-            Counter.count = 1;
+            GameData.playthrough_count = 1;
             GameManager.hasWon = false;
            // playing = true;
         }
@@ -29,9 +30,9 @@ public class MusicManager : MonoBehaviour
 
     private void Update() // play again if the music stops doesnt loop on main menu
     {
-        if (!aS.isPlaying && SceneManager.GetActiveScene().buildIndex > 0)
+        if (!source.isPlaying && SceneManager.GetActiveScene().buildIndex > 0)
         {
-            aS.PlayOneShot(song, volume);
+            source.PlayOneShot(song, volume);
             DontDestroyOnLoad(this.gameObject);
            // playing = true;
         }
