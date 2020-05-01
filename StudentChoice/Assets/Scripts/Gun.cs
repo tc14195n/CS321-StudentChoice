@@ -9,6 +9,7 @@ public class Gun : MonoBehaviour
     private Camera cam = null;
     private Animator animator = null;
     private PlayerMove playerMove = null;
+    public AudioClip clip_shot, clip_reload, clip_empty;
 
     [Header("Position")]
     [SerializeField] Vector3 gunPos = new Vector3(0.03f, -0.12f, 0.03f);
@@ -148,6 +149,7 @@ public class Gun : MonoBehaviour
         animator.SetBool("Reloading", true);
         animator.SetBool("Walking", false);
         //TODO: ADD RELOAD SOUND HERE
+        SFXManager_player.playClip(clip_reload);
         yield return new WaitForSeconds(reloadSpeed);
         if (ammoLeftInMag > 0)
         {
@@ -167,6 +169,7 @@ public class Gun : MonoBehaviour
 
         isShooting = true;
         shoot();
+        SFXManager_player.playClip(clip_shot);
         animator.SetBool("Shot", true);
         yield return new WaitForSeconds(0.25f);
         isShooting = false;

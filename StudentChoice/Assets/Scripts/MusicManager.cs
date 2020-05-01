@@ -17,7 +17,7 @@ public class MusicManager : MonoBehaviour
 
     void Start() // play music but only checks when you are in the main menu
     {
-        b_last = 0;
+        b_last = -1;
         source = GetComponent<AudioSource>();
         source.loop = true;
         DontDestroyOnLoad(this);
