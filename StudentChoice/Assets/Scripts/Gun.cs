@@ -169,7 +169,6 @@ public class Gun : MonoBehaviour
 
         isShooting = true;
         shoot();
-        SFXManager_player.playClip(clip_shot);
         animator.SetBool("Shot", true);
         yield return new WaitForSeconds(0.25f);
         isShooting = false;
@@ -220,6 +219,7 @@ public class Gun : MonoBehaviour
             return;
 
         //TODO: ADD GUNSHOT SOUND HERE
+        SFXManager_player.playClip(clip_shot);
         ammoLeftInMag--;
         Instantiate(muzzleFlash, muzzle);
         RaycastHit hit;
