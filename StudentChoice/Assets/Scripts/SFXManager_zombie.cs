@@ -14,14 +14,13 @@ using UnityEngine;
  */
 public class SFXManager_zombie : MonoBehaviour
 {
-    int s_len, current_channel; // total number of sources
-    public AudioSource[] audio_channels;
-    public AudioClip z_growl;
-    public AudioClip z_attack;
-    public AudioClip z_walk;
+    static int s_len; // total number of sources
+    static int current_channel;
+    static AudioSource[] audio_channels;
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this);
         audio_channels = GetComponents<AudioSource>();
         s_len = audio_channels.Length;
         current_channel = 0;
@@ -33,26 +32,10 @@ public class SFXManager_zombie : MonoBehaviour
         
     }
 
-    public void growl()
+    public static void playClip(AudioClip clip)
     {
-        audio_channels[current_channel].clip = z_growl;
-        //volume adjust
-        playClip();
-    }
-    public void walk()
-    {
-        audio_channels[current_channel].clip = z_walk;
-        //volume adjust
-        playClip();
-    }
-    public void attack()
-    {
-        audio_channels[current_channel].clip = z_attack;
-        //volume adjust
-        playClip();
-    }
-    private void playClip()
-    {
+        audio_channels[current_channel].clip = clip;
+        audio_channels[current_channel].volume = 1;
         audio_channels[current_channel].Play();
         current_channel++;
         if (current_channel == s_len)

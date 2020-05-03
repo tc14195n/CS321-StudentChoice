@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: defd8db2a1b56ae4cbabb198e66d3719
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Before I Fall Demo
+  fontNames:
+  - Before I Fall Demo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 56ba190af0d8ab643b829c91d93c6090, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

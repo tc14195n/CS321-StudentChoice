@@ -16,6 +16,7 @@ public class SFXManager_player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this);
         audio_channels = GetComponents<AudioSource>();
         s_len = audio_channels.Length;
         current_channel = 0;
@@ -27,21 +28,7 @@ public class SFXManager_player : MonoBehaviour
 
     }
 
-    public void walk()
-    {
-        //audio_channels[current_channel].clip = p_walk;
-        //playClip();
-    }
-    public void hurt()
-    {
-        //audio_channels[current_channel].clip = p_hurt[0];
-        //playClip();
-    }
-    public static void attack()
-    {
-        //audio_channels[current_channel].clip = gun_single;
-        //playClip();
-    }
+    
     public static void playClip(AudioClip clip)
     {
         audio_channels[current_channel].clip = clip;
