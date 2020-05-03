@@ -9,7 +9,6 @@ public class Gun : MonoBehaviour
     private Camera cam = null;
     private Animator animator = null;
     private PlayerMove playerMove = null;
-    public AudioClip clip_shot, clip_reload, clip_empty;
 
     [Header("Position")]
     [SerializeField] Vector3 gunPos = new Vector3(0.03f, -0.12f, 0.03f);
@@ -32,6 +31,10 @@ public class Gun : MonoBehaviour
     [SerializeField] float reloadSpeed = 1;
     [SerializeField] float adsSpeed = 1;
 
+    [Header("Sound FX")]
+    public AudioClip clip_shot;
+    public AudioClip clip_reload;
+    public AudioClip clip_empty;
 
     [Header("FX")]
     [SerializeField] Transform muzzle = null;
