@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 4599366964362076}
   - component: {fileID: 95478227281926996}
   - component: {fileID: 557514668939831899}
+  - component: {fileID: 3066357269481493813}
   m_Layer: 0
   m_Name: wire_fence
   m_TagString: Untagged
@@ -155,6 +156,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phc: {fileID: 0}
+--- !u!65 &3066357269481493813
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081546094567534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6120491, y: 3.0514095, z: 9.78138}
+  m_Center: {x: -0.014829636, y: 1.0257043, z: -4.7188377}
 --- !u!1 &1330317958360912
 GameObject:
   m_ObjectHideFlags: 0

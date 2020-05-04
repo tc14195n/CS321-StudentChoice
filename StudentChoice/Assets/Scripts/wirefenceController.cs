@@ -23,9 +23,13 @@ public class wirefenceController : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        damage_timer += Time.deltaTime;
-        if (damage_timer % 1 == 0)
-            phc.damage(damage);
+        if (other.tag == "Player")
+        {
+            damage_timer += Time.deltaTime;
+            if (damage_timer % 1 == 0)
+                phc.damage(damage);
+        }
+            
     }
     private void OnTriggerEnter(Collider other)
     {
