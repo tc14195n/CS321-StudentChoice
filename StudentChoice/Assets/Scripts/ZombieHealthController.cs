@@ -102,7 +102,7 @@ public class ZombieHealthController : MonoBehaviour
         ragdoll.GetComponent<ZombieRagdoll>().Dismember(dismemberedLimbs); // remove the ragdolls limbs to match the dead zombie
         if(zomAI.isStunning)
         zomAI.phc.gameObject.GetComponent<PlayerMove>().isStunned = false;
-
+        GameData.zombie_count -= 1;
         Destroy(gameObject); //destroy the zombie (not the ragdoll)
     }
 }

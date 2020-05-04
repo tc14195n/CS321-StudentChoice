@@ -17,6 +17,12 @@ public class ZombieAIController : MonoBehaviour
     public float walkSpeed, runSpeed, crawlSpeed, ZombieAttackDamage, maxChaseDistance;
     ZombieHealthController zomhealth;
     public bool isStunning = false;
+    public AudioClip sfx_growl, sfx_walk, sfx_attack;
+    int s_len; // total number of sources
+    int current_channel;
+    AudioSource[] audio_channels;
+    AudioSource as_growl, as_attack, as_walk;
+
 
     public enum ZombieState{
         idle, 
@@ -33,6 +39,24 @@ public class ZombieAIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audio_channels = GetComponents<AudioSource>();
+        as_growl = audio_channels[0];
+        as_growl.clip = sfx_growl;
+        as_growl.loop = false;
+        as_growl.volume = 0.5f;
+
+        as_attack = audio_channels[1];
+        as_attack.clip = sfx_attack;
+        as_attack.loop = false;
+        as_attack.volume = 0.5f;
+        
+        as_walk = audio_channels[2];
+        as_walk.clip = sfx_walk;
+        as_walk.loop = false;
+        as_walk.volume = 0.2f;
+
+        s_len = audio_channels.Length;
+        current_channel = 0;
         animator = GetComponent<Animator>();
         nav = GetComponent<NavMeshAgent>();
         zomhealth = GetComponent<ZombieHealthController>();
@@ -51,6 +75,9 @@ public class ZombieAIController : MonoBehaviour
         switch (zombieState)
         {
             case ZombieState.idle:
+                as_walk.loop = false;
+                as_growl.loop = false;
+                
                 //TODO: ADD IDLE SOUND HERE
                 animator.SetBool("Idle", true);
 
@@ -97,7 +124,14 @@ public class ZombieAIController : MonoBehaviour
 
             case ZombieState.walking:
                 animator.SetBool("Walking", true);
+                as_growl.loop = true;
+                if (!as_growl.isPlaying)
+                    as_growl.Play();
+                as_walk.loop = true;
+                if (!as_walk.isPlaying)
+                    as_walk.Play();
                 //TODO: ADD WALKING SOUND HERE
+                
 
                 if (distance >= maxChaseDistance && !playerSeeker) // Stop chasing the player if he has escaped and the zombie is not set to chase the player
                 {
@@ -157,7 +191,8 @@ public class ZombieAIController : MonoBehaviour
                 nav.SetDestination(target.position); // move to player
                 break;
 
-            case ZombieState.crawling:              
+            case ZombieState.crawling:
+                as_walk.loop = false;
                 animator.SetBool("Crawling", true);
                 animator.SetBool("Runner", false);
                 //TODO: ADD CRAWLING SOUND HERE
@@ -181,6 +216,9 @@ public class ZombieAIController : MonoBehaviour
 
             case ZombieState.attacking:               
                 animator.SetBool("Attacking", true);
+                if (!as_attack.isPlaying)
+                    as_attack.Play();
+
                 //TODO: ADD ATTACK SOUND HERE
 
                 Vector3 targetPos = new Vector3(target.position.x, transform.position.y, target.position.z); // used to make sure the zombie...
@@ -284,4 +322,5 @@ public class ZombieAIController : MonoBehaviour
     {
         phc.damage(ZombieAttackDamage); //animtion events call damagePlayer and damagePlayer sends the damage amount to the player health controller
     }
+    
 }

@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     {
         win_msg = "Mission accomplished";
         lose_msg = "Mission failed";
-        scene_num = SceneManager.GetActiveScene().buildIndex;
+        scene_num = SceneManager.GetActiveScene().buildIndex; 
         switch (scene_num)
         {
             case (0):
@@ -42,9 +42,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("zombie_count: " + GameData.zombie_count);
         switch (scene_num)
         {
             case (0):
+                if (Input.GetKeyDown(KeyCode.Space))
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(1);
                 break;
             case (1):
                 if (GameData.zombie_count <= 0)
@@ -61,7 +64,8 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case (4):
-                
+                if (Input.GetKeyDown(KeyCode.Space))
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(0);
                 break;
         }
     }
