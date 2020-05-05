@@ -163,6 +163,7 @@ public class ZombieAIController : MonoBehaviour
                 animator.SetBool("Running", true);
                 //TODO: ADD RUNNING SOUND HERE
 
+
                 if (distance >= maxChaseDistance && !playerSeeker) // Stop chasing the player if he has escaped and the zombie is not set to chase the player
                 {
                     animator.SetBool("Running", false);

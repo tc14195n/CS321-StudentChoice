@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     int scene_num;
     string win_msg, lose_msg;
     public Text display_msg;
+    public Animator fade;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,16 +52,23 @@ public class GameManager : MonoBehaviour
                 break;
             case (1):
                 if (GameData.zombie_count <= 0)
-                    SceneManager.LoadScene(scene_num + 1);
+                {
+                    StartCoroutine(Survived());
+                    
+                }
                 break;
             case (2):
                 if (GameData.zombie_count <= 0)
-                    SceneManager.LoadScene(scene_num + 1);
+                {
+                    StartCoroutine(Survived());
+                    //SceneManager.LoadScene(scene_num + 1);
+                }
                 break;
             case (3):
                 if (GameData.zombie_count <= 0) {
                     GameData.hasWon = true;
-                    SceneManager.LoadScene(scene_num + 1);
+                    StartCoroutine(Survived());
+                    //SceneManager.LoadScene(scene_num + 1);
                 }
                 break;
             case (4):
@@ -68,5 +76,12 @@ public class GameManager : MonoBehaviour
                     UnityEngine.SceneManagement.SceneManager.LoadScene(0);
                 break;
         }
+    }
+
+    IEnumerator Survived()
+    {
+        fade.SetTrigger("Survived");
+        yield return new WaitForSeconds(10f);
+        SceneManager.LoadScene(scene_num + 1);
     }
 }
