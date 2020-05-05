@@ -63,8 +63,8 @@ public class MusicManager : MonoBehaviour
             source.Play();
         }
         
-        if (source.volume < 0.5)
-            source.volume += 0.1f * Time.deltaTime;
+        if (source.volume < 0.25)
+            Debug.Log(source.volume += 0.1f * Time.deltaTime);
         /*if (!source.isPlaying && SceneManager.GetActiveScene().buildIndex > 0)
         {
             source.PlayOneShot(song, volume);

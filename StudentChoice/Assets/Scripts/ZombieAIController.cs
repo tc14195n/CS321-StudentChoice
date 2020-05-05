@@ -53,7 +53,7 @@ public class ZombieAIController : MonoBehaviour
         as_walk = audio_channels[2];
         as_walk.clip = sfx_walk;
         as_walk.loop = false;
-        as_walk.volume = 0.2f;
+        as_walk.volume = 0.5f;
 
         s_len = audio_channels.Length;
         current_channel = 0;

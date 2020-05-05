@@ -3298,7 +3298,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: -0.09
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &149212019388378701
@@ -3356,8 +3356,8 @@ MonoBehaviour:
   ZombieAttackDamage: 5
   maxChaseDistance: 36
   isStunning: 0
-  sfx_growl: {fileID: 8300000, guid: 094dfce8064fe364c8ebf4dabd1c5831, type: 3}
-  sfx_walk: {fileID: 8300000, guid: 4e86b65d403951241968b69566cd2bf4, type: 3}
+  sfx_growl: {fileID: 8300000, guid: 256a48746cd938f40a58e7b0768838d4, type: 3}
+  sfx_walk: {fileID: 8300000, guid: 854de695bf1d7754d80bd72d3f281f81, type: 3}
   sfx_attack: {fileID: 8300000, guid: 7e5985f5bd66e6e4288445f81a5a17dc, type: 3}
   zombieState: 0
 --- !u!82 &3981526536394576482
