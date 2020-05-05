@@ -91461,6 +91461,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.5235849
       objectReference: {fileID: 0}
+    - target: {fileID: 5567325997740050356, guid: 83b470490e588f74f83cac71ee3b44ad,
+        type: 3}
+      propertyPath: clip_reload
+      value: 
+      objectReference: {fileID: 8300000, guid: 7efb4875a9fb22d4d8ea7036955adba5, type: 3}
     - target: {fileID: 6609653435943677281, guid: 83b470490e588f74f83cac71ee3b44ad,
         type: 3}
       propertyPath: m_RootOrder

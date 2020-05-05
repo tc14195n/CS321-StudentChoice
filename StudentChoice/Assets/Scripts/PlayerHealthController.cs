@@ -20,6 +20,7 @@ public class PlayerHealthController : MonoBehaviour
         //TODO: camera shake or bloody screen and hit/moan sound
         //TODO: HUD update
         health -= amount;
+        if(!aS.isPlaying)
         aS.PlayOneShot(hurtSFX);
 
 

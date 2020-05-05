@@ -25,8 +25,8 @@ public class wirefenceController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            damage_timer += Time.deltaTime;
-            if (damage_timer % 1 == 0)
+           damage_timer += Time.deltaTime;
+            if ((int)damage_timer % 20 == 0)
                 phc.damage(damage);
         }
             

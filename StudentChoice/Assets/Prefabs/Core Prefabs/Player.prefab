@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  hurtSFX: {fileID: 0}
+  hurtSFX: {fileID: 8300000, guid: 9f34a8399de9e7c469b3663fe48cb7e5, type: 3}
 --- !u!114 &2169682902588410489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4016,7 +4016,7 @@ MonoBehaviour:
   reloadSpeed: 3
   adsSpeed: 1
   clip_shot: {fileID: 8300000, guid: 674a996186d905445aac6a0fbd1e2ebf, type: 3}
-  clip_reload: {fileID: 8300000, guid: d7540d1fc8b91b9489dedb71fc582dc0, type: 3}
+  clip_reload: {fileID: 8300000, guid: 7efb4875a9fb22d4d8ea7036955adba5, type: 3}
   clip_empty: {fileID: 8300000, guid: ef1e3f12d35fe0a45901d12ae38d703d, type: 3}
   muzzle: {fileID: 2169682902539627423}
   muzzleFlash: {fileID: 161002, guid: 489aba68c9dfe9342accb1f3a0be4e5b, type: 3}
