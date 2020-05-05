@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 2169682902588410470}
   - component: {fileID: 2169682902588410469}
   - component: {fileID: 2169682902588410489}
+  - component: {fileID: 5310771547754296283}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -217,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c2ad56b88b94d46adb0942d823c8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 12
+  moveSpeed: 6
   isMoving: 0
   isStunned: 0
   groundCheck: {fileID: 3169028577164682048}
@@ -271,6 +272,19 @@ MonoBehaviour:
   ammoReserve: {fileID: 0}
   firemode: {fileID: 0}
   grabbed: {fileID: 0}
+--- !u!65 &5310771547754296283
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2169682902054413662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.7, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2169682902539627416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,6 +4013,9 @@ MonoBehaviour:
   headDamageMultiplier: 5
   reloadSpeed: 3
   adsSpeed: 1
+  clip_shot: {fileID: 8300000, guid: 674a996186d905445aac6a0fbd1e2ebf, type: 3}
+  clip_reload: {fileID: 8300000, guid: d7540d1fc8b91b9489dedb71fc582dc0, type: 3}
+  clip_empty: {fileID: 8300000, guid: ef1e3f12d35fe0a45901d12ae38d703d, type: 3}
   muzzle: {fileID: 2169682902539627423}
   muzzleFlash: {fileID: 161002, guid: 489aba68c9dfe9342accb1f3a0be4e5b, type: 3}
   impactFX:
