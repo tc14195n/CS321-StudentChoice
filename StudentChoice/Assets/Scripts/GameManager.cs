@@ -22,13 +22,13 @@ public class GameManager : MonoBehaviour
                 GameData.hasWon = false;
                 break;
             case (1):
-                GameData.zombie_count = 2;
+                GameData.zombie_count = 5;
                 break;
             case (2):
-                GameData.zombie_count = 2;
+                GameData.zombie_count = 10;
                 break;
             case (3):
-                GameData.zombie_count = 2;
+                GameData.zombie_count = 20;
                 break;
             case (4):
                 if (GameData.hasWon)

@@ -63,7 +63,7 @@ public class MusicManager : MonoBehaviour
             source.Play();
         }
         
-        if (source.volume != 1)
+        if (source.volume < 0.5)
             source.volume += 0.1f * Time.deltaTime;
         /*if (!source.isPlaying && SceneManager.GetActiveScene().buildIndex > 0)
         {
