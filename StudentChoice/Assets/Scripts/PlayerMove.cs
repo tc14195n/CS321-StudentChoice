@@ -48,7 +48,7 @@ public class PlayerMove : MonoBehaviour
             cC.Move((transform.right * x + transform.forward * z) * moveSpeed * Time.deltaTime);
         }
 
-       // cC.Move((transform.right * x + transform.forward *z) * moveSpeed * Time.deltaTime);
+       
         cC.Move(velocity * Time.deltaTime);
     }
 

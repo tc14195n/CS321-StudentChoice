@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 public class PlayerHealthController : MonoBehaviour
 {
     public float health = 100;
+    public AudioClip hurtSFX;
+    private AudioSource aS;
 
-
-    //void Start(){}
+    void Start(){
+        aS = GetComponent<AudioSource>();
+    }
     //void Update(){}
 
     public void damage(float amount)
@@ -17,7 +20,7 @@ public class PlayerHealthController : MonoBehaviour
         //TODO: camera shake or bloody screen and hit/moan sound
         //TODO: HUD update
         health -= amount;
-
+        aS.PlayOneShot(hurtSFX);
 
 
         if (health <= 0) //death check
