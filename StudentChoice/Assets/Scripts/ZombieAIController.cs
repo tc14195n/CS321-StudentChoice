@@ -22,6 +22,7 @@ public class ZombieAIController : MonoBehaviour
     int current_channel;
     AudioSource[] audio_channels;
     AudioSource as_growl, as_attack, as_walk;
+    
 
 
     public enum ZombieState{
@@ -60,7 +61,11 @@ public class ZombieAIController : MonoBehaviour
         animator = GetComponent<Animator>();
         nav = GetComponent<NavMeshAgent>();
         zomhealth = GetComponent<ZombieHealthController>();
-
+        if (GameManager.deathMode)
+        {
+            playerSeeker = true;
+            isRunner = true;
+        }
         if (isRunner) //check if this zombie should run
         {
             animator.SetBool("Runner", true); //just to make sure the right animations play
