@@ -1311,6 +1311,11 @@ PrefabInstance:
       propertyPath: fade
       value: 
       objectReference: {fileID: 7433395689831672622}
+    - target: {fileID: 1447911456852980236, guid: 8ae19a8982e1a7a44b1744cb1af7a2f3,
+        type: 3}
+      propertyPath: pHC
+      value: 
+      objectReference: {fileID: 741930574}
     - target: {fileID: 1447911456852980237, guid: 8ae19a8982e1a7a44b1744cb1af7a2f3,
         type: 3}
       propertyPath: m_Name

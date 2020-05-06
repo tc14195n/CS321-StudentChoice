@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     string win_msg, lose_msg;
     public Text display_msg;
     public Animator fade;
+    public static bool fading;
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +82,7 @@ public class GameManager : MonoBehaviour
     IEnumerator Survived()
     {
         fade.SetTrigger("Survived");
+        fading = true; //prevent death during transitions
         yield return new WaitForSeconds(10f);
         SceneManager.LoadScene(scene_num + 1);
     }

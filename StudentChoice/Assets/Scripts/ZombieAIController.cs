@@ -215,7 +215,8 @@ public class ZombieAIController : MonoBehaviour
                 nav.SetDestination(target.position); // move to player
                 break;
 
-            case ZombieState.attacking:               
+            case ZombieState.attacking:
+                if(!GameManager.fading)
                 animator.SetBool("Attacking", true);
                 if (!as_attack.isPlaying)
                     as_attack.Play();
