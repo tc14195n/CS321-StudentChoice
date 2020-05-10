@@ -1351,11 +1351,9 @@ MonoBehaviour:
   Level1:
   - {fileID: 8300000, guid: 3cca4b96e0767fe4aad4fb3e9b50be75, type: 3}
   Level2:
-  - {fileID: 8300000, guid: ca5d04fdab0e7814b9007644a5f2aca5, type: 3}
+  - {fileID: 8300000, guid: 3cca4b96e0767fe4aad4fb3e9b50be75, type: 3}
   Level3:
-  - {fileID: 8300000, guid: 230d4289614b6fe4b9c56138bd419568, type: 3}
-  - {fileID: 8300000, guid: 5af64315c10c2bc4aa0c502cec5be971, type: 3}
-  - {fileID: 8300000, guid: 324fca5c22998424dbaffb5a1c71aa96, type: 3}
+  - {fileID: 8300000, guid: 3cca4b96e0767fe4aad4fb3e9b50be75, type: 3}
   EndMenu:
   - {fileID: 8300000, guid: 0f526d08b21618b4d9f31e823e0b7dd9, type: 3}
 --- !u!4 &276679840

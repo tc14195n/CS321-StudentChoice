@@ -99,6 +99,7 @@ public class GameManager : MonoBehaviour
     public void difficulty()
     {
         Debug.Log (deathMode = !deathMode);
+
     }
 
     IEnumerator Survived()
